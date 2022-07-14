@@ -15,8 +15,8 @@ class agendaDesa extends Seeder
     public function run()
     {
         DB::table('agenda_desas')->insert([
-            'nama_agenda' => '17 agustus',
-            'deskripsi' => 'acara tahunan perayaan 17 agustusan',
+            'nama_agenda' => '17-08-2022',
+            'deskripsi' => 'Acara tahunan perayaan 17 agustusan',
             'is_active' => true,
             'user_id' => 1
         ]);
