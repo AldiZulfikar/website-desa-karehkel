@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #028fcc;
+    padding: 0;
+}
+
+.navbar .navbar-brand {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .navbar-brand img {
+    margin-right: 1.5rem;
+    float: left;
+}
+
+.navbar .navbar-brand p {
+    font-weight: 700;
+    font-size: 1.5rem;
+    float: right;
+    margin: 0;
+}
+
+.navbar .navbar-nav {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.navbar .nav-item {
+    padding: 1em 0em;
+}
+
+.navbar .nav-item:hover {
+    background-color: #0272a3;
+}
+
+.navbar .nav-link {
+    margin: 0 0.5rem;
+    color: #fff;
+}
+
+/* Jumbotron */
+
+header {
+    background: url("img/Home.webp");
+    background-size: cover;
+    height: 100vh;
+}
+
+.jumbotron {
+    text-align: center;
+}
+
+.jumbotron .welcome {
+    padding-top: 200px;
+}
+
+.jumbotron h4 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #fff000;
+}
+
+.jumbotron h1 {
+    font-size: 4em;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* Agenda */
+.agenda {
+    margin: 4em 0em;
+}
+
+.agenda h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 4.5rem;
+}
+
+.agenda thead {
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #028fcc;
+}
+
+.agenda .month {
+    padding: 0px;
+}
+
+.agenda .date {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #fff;
+    margin-right: 0.5em;
+    width: 2em;
+    height: 2em;
+    background-color: #028fcc;
+}
+
+.agenda h5 {
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #028fcc;
+}
+
+.agenda .day {
+    display: inline-flex;
+    text-decoration: none;
+    margin-bottom: 2em;
+}
+
+.agenda h6 {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #fff;
+    margin-right: 0.5em;
+    width: 2em;
+    background-color: #028fcc;
+}
+
+.agenda p {
+    height: 1em;
+}
+
+.agenda button {
+    background: #028fcc;
+    border: 2px solid transparent;
+    border-radius: 0.75em;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    outline: none;
+    padding: 0.5em 1.5em;
+}
+
+.agenda button:hover {
+    background-color: #0272a3;
+    border: 2px solid transparent;
+    color: #fff000;
+}
+
+/* Berita */
+.berita {
+    margin: 4em 0em;
+}
+
+.berita h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 4.5rem;
+}
+
+.berita .card {
+    border: none;
+}
+
+.berita .card-body {
+    padding: 1em 0;
+}
+
+.berita .card-body a {
+    text-decoration: none;
+}
+
+.berita .card-body h5 {
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #028fcc;
+    height: 3em;
+}
+
+.berita .card-body h6 {
+    font-size: 1em;
+    font-weight: 600;
+    color: #333333;
+}
+
+.berita .card-body p {
+    font-size: 1em;
+    color: #656565;
+}
+
+.berita button {
+    background: #028fcc;
+    border: 2px solid transparent;
+    border-radius: 0.75em;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    outline: none;
+    padding: 0.5em 1.5em;
+}
+
+.berita button:hover {
+    background-color: #0272a3;
+    border: 2px solid transparent;
+    color: #fff000;
+}
+
+/* Site Footer */
+.site-footer {
+    background-color: #028fcc;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 0em;
+}
+
+.site-footer .profile {
+    float: left;
+}
+
+.site-footer .maps {
+    float: right;
+}
+
+.site-footer .logo {
+    display: inline-flex;
+    text-decoration: none;
+    color: #fff;
+}
+
+.site-footer img {
+    height: 6em;
+}
+
+.site-footer .title {
+    font-size: 3em;
+    font-weight: 700;
+    margin-left: 0.5em;
+}
+
+.site-footer .contact {
+    color: #fff;
+    display: inline-flex;
+    text-decoration: none;
+    /* margin-right: 3em; */
+}
+
+.site-footer li {
+    list-style: none;
+}
+
+.site-footer .contact .text {
+    padding-left: 1em;
+}
+
+.site-footer .contact .iconify {
+    font-size: 1.5em;
+}
+
+/* Footer */
+footer p {
+    color: #656565;
+}
+
+footer a {
+    text-decoration: none;
+    color: #656565;
+}
+
+footer i:hover {
+    color: #028fcc;
+}
+
+footer a:hover {
+    color: #028fcc;
+}
+
+/* Profil Page */
+.profil {
+    margin: 4em 0em;
+}
+
+.profil h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 4.5rem;
+}
+
+.visi h2,
+.misi h2,
+.struktur h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #333333;
+    margin: 4.5rem 0;
+}
+
+.profil img {
+    width: 30em;
+}
+
+.profil p,
+.visi p,
+.misi p {
+    text-align: justify;
+}
+
+/* Data Desa */
+.data-desa {
+    margin: 4em 0em;
+}
+
+.data-desa h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 4.5rem;
+}
+
+/* Kontak Kami */
+.kontak-kami {
+    margin: 4em 0em;
+}
+
+.kontak-kami h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 4.5rem;
+}
+
+.kontak-kami p {
+    text-align: justify;
+    color: #333;
+}
+
+.kontak-kami .icons {
+    font-size: 2em;
+    color: #333;
+}
+
+.kontak-kami .icons-col {
+    width: 20px;
+}
+
+.kontak-kami a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Media */
+@media screen and (max-width: 960px) {
+    .nav-item .nav-link {
+        padding-right: 1em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Jumbotron */
+    .jumbotron {
+        height: 700px;
+    }
+    .jumbotron img {
+        height: 100vh;
+    }
+
+    /* Site Footer */
+    .site-footer .desa {
+        text-align: center;
+    }
+    .site-footer img {
+        height: 5em;
+    }
+
+    .site-footer .title {
+        font-size: 2.5em;
+        font-weight: 700;
+        margin-left: 0.5em;
+        text-align: start;
+    }
+
+    /* Profil */
+    .profil img {
+        width: 90vw;
+    }
+    .profil .picture {
+        text-align: center;
+    }
+}
