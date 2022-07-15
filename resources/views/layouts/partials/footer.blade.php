@@ -5,7 +5,7 @@
         <div class="col-md-6 profile">
           <div class="desa mb-3">
             <a class="logo">
-              <img src="assets/img/logo-kabupaten.webp" alt="" />
+              <img src="{{asset('/frontend-assets/assets/img/logo-kabupaten.webp')}}" alt="" />
               <p class="title lh-1">
                 DESA <br />
                 KAREHKEL

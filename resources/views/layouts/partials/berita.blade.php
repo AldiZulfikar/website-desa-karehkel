@@ -21,7 +21,7 @@
                             {{$data_berita->judul}}
                         </h5>
                     </a>
-                    <h6 class="date">{{\Carbon\Carbon::parse($data_berita->created_at)->format('d F Y')}}</h6>
+                    <h6 class="date"><i class="far fa-user"></i> {{ $data_berita->users->name }} &nbsp;<i class="far fa-calendar-alt"></i> {{\Carbon\Carbon::parse($data_berita->created_at)->format('d F Y')}}</h6>
                     <p class="card-text">
                         {{Str::limit($data_berita->konten, 94)}}
                     </p>

@@ -35,3 +35,8 @@
     </div>
   </div>
   <!-- Agenda End -->
+
+  <div class="garis text-center">
+    <img src="{{asset('/frontend-assets/assets/img/logo-kabupaten.webp')}}" alt="" height="48" />
+        <p>Desa Karehkel, Kecamatan Leuwiliang, Bogor</p>
+  </div>

@@ -48,14 +48,17 @@
 
 /* Jumbotron */
 
-/* header {
+header {
     background: url("img/Home.webp");
     background-size: cover;
     height: 100vh;
-} */
+}
 
 .jumbotron {
     text-align: center;
+}
+.jumbotron img {
+    height: 90vh;
 }
 
 .jumbotron .welcome {
@@ -74,6 +77,66 @@
     color: #fff;
 }
 
+.jumbotron .btn {
+    background: #028fcc;
+    border: 2px solid transparent;
+    border-radius: 0.75em;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    outline: none;
+    padding: 0.5em 1.5em;
+}
+
+.jumbotron .btn:hover {
+    background-color: #0272a3;
+    border: 2px solid transparent;
+    color: #fff000;
+}
+
+marquee {
+    background-color: #fff000;
+    font-weight: 700;
+    height: 33px;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* profil home */
+.profil-home {
+    margin: 6em 0em;
+}
+.profil-home h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 1.5rem;
+}
+.profil-home img {
+    align-items: left;
+    height: 100%;
+}
+
+.profil-home button {
+    background: #028fcc;
+    border: 2px solid transparent;
+    border-radius: 0.75em;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    outline: none;
+    padding: 0.5em 1.5em;
+}
+
+.profil-home button:hover {
+    background-color: #0272a3;
+    border: 2px solid transparent;
+    color: #fff000;
+}
+
 /* Agenda */
 .agenda {
     margin: 4em 0em;
@@ -83,7 +146,8 @@
     font-size: 2em;
     font-weight: 700;
     color: #333333;
-    margin-bottom: 4.5rem;
+    margin-top: 4.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .agenda thead {
@@ -149,6 +213,24 @@
     color: #fff000;
 }
 
+.garis {
+    margin-top: 8rem;
+    background-color: #0272a3;
+    height: 30vh;
+    align-items: center;
+    justify-content: center;
+}
+.garis img {
+    margin-top: 3.5rem;
+    height: 8rem;
+}
+.garis p {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
 /* Berita */
 .berita {
     margin: 4em 0em;
@@ -158,7 +240,8 @@
     font-size: 2em;
     font-weight: 700;
     color: #333333;
-    margin-bottom: 4.5rem;
+    margin-top: 4.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .berita .card {
@@ -353,6 +436,11 @@ footer a:hover {
     color: #333;
 }
 
+.carousel-caption.d-flex.flex-column.align-items-center.justify-content-center {
+    /* background: black; */
+    height: 100%;
+}
+
 /* Media */
 @media screen and (max-width: 960px) {
     .nav-item .nav-link {
@@ -361,12 +449,38 @@ footer a:hover {
 }
 
 @media screen and (max-width: 768px) {
+    .navbar-brand img {
+        margin-top: 0.45rem;
+        margin-bottom: 0.45rem;
+    }
     /* Jumbotron */
     .jumbotron {
-        height: 700px;
+        height: 25vh;
     }
     .jumbotron img {
-        height: 100vh;
+        height: 25vh;
+    }
+    .jumbotron h4 {
+        margin-top: 2em;
+        font-size: 20px;
+    }
+    .jumbotron h1 {
+        font-size: 25px;
+    }
+    .jumbotron .btn {
+        font-size: 10px;
+    }
+
+    .profil-home {
+        margin-top: 3rem;
+    }
+
+    .garis img {
+        margin-top: 4rem;
+        height: 7rem;
+    }
+    .garis p {
+        font-size: 15px;
     }
 
     /* Site Footer */
@@ -382,6 +496,11 @@ footer a:hover {
         font-weight: 700;
         margin-left: 0.5em;
         text-align: start;
+    }
+
+    .profil-home img {
+        margin-top: 2rem;
+        width: 100%;
     }
 
     /* Profil */
