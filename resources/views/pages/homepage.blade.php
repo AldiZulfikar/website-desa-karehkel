@@ -23,23 +23,6 @@
                 </div>
 						  </div> 
             </div>
-            <div class="">
-              <img src="{{asset('/frontend-assets/assets/img/Home.webp')}}" class="w-100" alt="...">
-              <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                <div class="p-3" style="max-width: 900px">
-                  <h4 class="text-white text-uppercase mb-3 animated slideInDown">
-                    Selamat Datang di Websites Resmi
-                  </h4>
-                  <h1 class="display-1 text-uppercase text-warning mb-md-4 animated zoomIn">
-                    Desa Karehkel
-                  </h1>
-                  <a
-                    href="/kontak-desa"
-                    class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
-                    >Hubungi Kami</a
-                  >
-                </div>
-              </div>
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
