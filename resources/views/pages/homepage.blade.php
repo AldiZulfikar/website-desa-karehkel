@@ -5,7 +5,7 @@
     <header class="container-fluid position-relative p-0">
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="">
+            <div class="carousel-item active">
               <img src="{{asset('/frontend-assets/assets/img/Home.webp')}}" class="w-100" alt="...">
               <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                 <div class="p-3" style="max-width: 900px">
@@ -23,7 +23,7 @@
                 </div>
 						  </div> 
             </div>
-            <div class="carousel-item" data-bs-interval="">
+            <div class="carousel-item">
               <img src="{{asset('/frontend-assets/assets/img/Home.webp')}}" class="w-100" alt="...">
               <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                 <div class="p-3" style="max-width: 900px">
