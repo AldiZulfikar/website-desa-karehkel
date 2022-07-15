@@ -48,11 +48,11 @@
 
 /* Jumbotron */
 
-header {
+/* header {
     background: url("img/Home.webp");
     background-size: cover;
     height: 100vh;
-}
+} */
 
 .jumbotron {
     text-align: center;
