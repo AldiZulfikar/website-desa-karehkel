@@ -15,7 +15,7 @@ class CreateProfilDesasTable extends Migration
     {
         Schema::create('profil_desas', function (Blueprint $table) {
             $table->id();
-            $table->string('foto_desa');
+            $table->string('foto_desa')->nullable();;
             $table->string('nama_desa');
             $table->text('sejarah');
             $table->text('visi');

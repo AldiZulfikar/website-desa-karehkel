@@ -1,15 +1,15 @@
 <section class="profil">
     <div class="container">
       <div class="row text-center">
-        <div class="col">
-          <h2>{{$profil->nama_desa}}</h2>
+        <div class="col-lg-12">
+          <h2>Tentang {{$profil->nama_desa}}</h2>
         </div>
       </div>
       <div class="row">
-        <div class="picture col">
-          <img src="{{asset('upload/' .$profil->foto_desa)}}" alt="" />
+        <div class="picture col-lg-5">
+          <img src="{{$profil->foto_desa ? asset('upload/' .$profil->foto_desa) : asset('/frontend-assets/assets/img/desa.png')}}" alt="" />
         </div>
-        <div class="col">
+        <div class="col-lg-7">
           <p>
             {{$profil->sejarah}}
           </p>
@@ -21,9 +21,9 @@
 
   <!-- Visi -->
   <section class="visi">
-    <div class="container">
+    <div class="container visi-content rounded-3 border shadow-lg">
       <div class="row">
-        <div class="col text-center">
+        <div class="col-lg-12 text-center">
           <h2>Visi Desa</h2>
         </div>
       </div>
@@ -40,9 +40,9 @@
 
   <!-- Misi -->
   <section class="misi">
-    <div class="container">
+    <div class="container misi-content rounded-3 border shadow-lg">
       <div class="row">
-        <div class="col text-center">
+        <div class="col-lg-12 text-center">
           <h2>Misi Desa</h2>
         </div>
       </div>
@@ -66,7 +66,7 @@
       </div>
       <div class="row">
         <div class="col">
-          <p>
+          <p class="text-center">
             Berikut ini merupakan struktur desa periode 2022-2027 yang
             terdapat pada Desa Karehkel, Kecamatan Leuwiliang, Kabupaten
             Bogor.
@@ -74,31 +74,23 @@
         </div>
       </div>
       <div class="row">
-        <div class="col">
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th scope="col">Foto Pengurus</th>
-                <th scope="col">Nama</th>
-                <th scope="col">Jabatan</th>
-                <th scope="col">Tempat, Tanggal Lahir</th>
-                <th scope="col">Pendidikan</th>
-                <th scope="col">NIP</th>
-              </tr>
-            </thead>
-            <tbody>
-            @foreach($struktur_pemerintahan as $data)
-              <tr>
-                <th><img src="{{asset('upload/' . $data->foto_pengurus)}}" alt=""></th>
-                <td>{{$data->nama}}</td>
-                <td>{{$data->jabatan}}</td>
-                <td>{{$data->tempat_lahir}}, {{$data->tanggal_lahir}}</td>
-                <td>{{$data->pendidikan}}</td>
-                <td>{{$data->nip}}</td>
-              </tr>
-            @endforeach
-            </tbody>
-          </table>
+        <div class="col-lg-12 mb-5">
+          @foreach($struktur_pemerintahan as $data)
+          <div class="pengurus col-lg-3 wow slideInUp">
+            <div class="rounded-3 shadow-lg overflow-hidden">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid w-100" src="{{$data->foto_pengurus ? asset('upload/' . $data->foto_pengurus) : asset('/frontend-assets/assets/img/user-foto.jpg')}}" alt="" />
+              </div>
+              <div class="text-center py-4">
+                <h4 class="text-dark">{{$data->nama}}</h4>
+                <h6 class="text-uppercase m-0">{{$data->jabatan}}</h6>
+                <p class="m-0">{{$data->tempat_lahir}}, {{\Carbon\Carbon::parse($data->tanggal_lahir)->format('d F Y')}}</p>
+                <p class="m-0">{{$data->pendidikan}}</p>
+                <p class="m-0">{{$data->nip}}</p>
+              </div>
+            </div>
+          </div>
+          @endforeach
         </div>
       </div>
     </div>

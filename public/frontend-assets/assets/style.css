@@ -116,7 +116,7 @@ marquee {
 }
 .profil-home img {
     align-items: left;
-    height: 100%;
+    width: 33em;
 }
 
 .profil-home button {
@@ -228,6 +228,11 @@ marquee {
     margin-top: 0.5rem;
     font-size: 1.5rem;
     font-weight: 700;
+    color: #fff;
+}
+
+.hero {
+    background-color: #0272a3;
     color: #fff;
 }
 
@@ -365,6 +370,7 @@ footer a:hover {
 /* Profil Page */
 .profil {
     margin: 4em 0em;
+    align-items: center;
 }
 
 .profil h2 {
@@ -374,17 +380,25 @@ footer a:hover {
     margin-bottom: 4.5rem;
 }
 
+.visi-content,
+.misi-content {
+    margin-top: 4em;
+    margin-bottom: 4em;
+    padding: 2em;
+}
+
 .visi h2,
 .misi h2,
 .struktur h2 {
     font-size: 2em;
     font-weight: 700;
     color: #333333;
-    margin: 4.5rem 0;
+    margin: 1rem 0;
 }
 
 .profil img {
-    width: 30em;
+    align-items: center;
+    width: 33em;
 }
 
 .profil p,
@@ -435,6 +449,9 @@ footer a:hover {
     text-decoration: none;
     color: #333;
 }
+.pengurus {
+    margin: 3em;
+}
 
 .carousel-caption.d-flex.flex-column.align-items-center.justify-content-center {
     /* background: black; */
@@ -475,8 +492,13 @@ footer a:hover {
         margin-top: 3rem;
     }
 
+    marquee {
+        height: 28px;
+        font-size: 16px;
+    }
+
     .garis img {
-        margin-top: 4rem;
+        margin-top: 3.5rem;
         height: 7rem;
     }
     .garis p {

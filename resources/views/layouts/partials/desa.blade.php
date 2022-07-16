@@ -17,7 +17,7 @@
           </div>
         </div>
         <div class="picture col-lg-5 col-md-5">
-          <img src="{{asset('upload/' .$profil->foto_desa)}}" alt="" />
+          <img src="{{$profil->foto_desa ? asset('upload/' .$profil->foto_desa) : asset('/frontend-assets/assets/img/desa.png')}}" alt="" />
         </div>
       </div>   
     </div>

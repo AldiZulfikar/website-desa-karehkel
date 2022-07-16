@@ -11,7 +11,7 @@
             <thead>
               <tr>
                 <th scope="col">Nama Sekolah</th>
-                <th scope="col">JUmlah Guru</th>
+                <th scope="col">Jumlah Guru</th>
                 <th scope="col">Jumlah Murid</th>
               </tr>
             </thead>

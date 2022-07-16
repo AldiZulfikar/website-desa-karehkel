@@ -11,7 +11,7 @@
             <div class="col-md-4 mb-4">
                 <div class="card">
                     <img
-                    src="{{ asset('upload/' . $data_berita->gambar_berita) }}"
+                    src="{{$data_berita->gambar_berita ? asset('upload/' .$data_berita->gambar_berita) : asset('/frontend-assets/assets/img/berita.png')}}"
                     class="card-img-top"
                     alt="..."
                     />

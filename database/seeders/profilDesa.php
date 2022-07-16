@@ -15,7 +15,7 @@ class profilDesa extends Seeder
     public function run()
     {
         DB::table('profil_desas')->insert([
-            'foto_desa' => 'foto.png',
+            'foto_desa' => '',
             'nama_desa' => 'Nama Desa',
             'sejarah' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Eligendi, dolores nulla perspiciatis iure dicta nostrum accusantium quasi 

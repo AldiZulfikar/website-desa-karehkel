@@ -15,7 +15,7 @@ class strukturPemerintahanDesa extends Seeder
     public function run()
     {
         DB::table('struktur_pemerintahan_desas')->insert([
-            'foto_pengurus' => 'foto1.png',
+            'foto_pengurus' => '',
             'nama' => 'nama kepala desa',
             'jabatan'=> 'kepala desa',
             'tempat_lahir' => 'bogor',

@@ -18,7 +18,7 @@ class beritaDesa extends Seeder
             'judul' => '1 Muharam Sangat Meriah',
             'slug' => '1-muharam-sangat-meriah',
             'konten' => 'lorem ipsum dolor sit amet',
-            'gambar_berita' => 'foto2.png',
+            'gambar_berita' => '',
             'is_active' => true,
             'views' => 12,
             'user_id' => 1

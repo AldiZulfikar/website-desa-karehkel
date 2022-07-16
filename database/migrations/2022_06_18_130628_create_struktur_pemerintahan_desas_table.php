@@ -15,7 +15,7 @@ class CreateStrukturPemerintahanDesasTable extends Migration
     {
         Schema::create('struktur_pemerintahan_desas', function (Blueprint $table) {
             $table->id();
-            $table->string("foto_pengurus");
+            $table->string("foto_pengurus")->nullable();;
             $table->string("nama");
             $table->string("jabatan");
             $table->string("tempat_lahir");
