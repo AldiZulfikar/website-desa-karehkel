@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="google-site-verification" content="CqvMHD4xR6MpW12sXvuXLddWcOkLkcLUyr1c9O1O4IY" />
     <title>Desa Karehkel</title>
+    <meta name="description" content="Desa Karehkel adalah salah satu Desa di wilayah Utara Kecamatan Leuwiliang, dengan luas wilayah
+420 Ha. secara geografis berbatasan dengan Kecamatan Rumpin">
+    <link rel="canonical" href="https://karehkel.herokuapp.com"/>
+    <meta property="og:title" content="Home" />
+    <meta property="og:description" content="Desa Karehkel adalah salah satu Desa di wilayah Utara Kecamatan Leuwiliang, dengan luas wilayah
+420 Ha. secara geografis berbatasan dengan Kecamatan Rumpin" />
+    <meta property="og:url" content="https://karehkel.herokuapp.com/" />
+
+    <meta name="twitter:title" content="Home" />
+    <meta name="twitter:description" content="Desa Karehkel adalah salah satu Desa di wilayah Utara Kecamatan Leuwiliang, dengan luas wilayah
+420 Ha. secara geografis berbatasan dengan Kecamatan Rumpin" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Home","description":"Desa Karehkel adalah salah satu Desa di wilayah Utara Kecamatan Leuwiliang, dengan luas wilayah
+420 Ha. secara geografis berbatasan dengan Kecamatan Rumpin"}</script>
 
     <!-- shortcut icon -->
     <link href="{{asset('/frontend-assets/assets/img/logo-kabupaten-2.webp')}}" rel="shortcut icon" />
