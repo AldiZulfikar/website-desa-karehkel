@@ -419,6 +419,14 @@ footer a:hover {
     margin-bottom: 4.5rem;
 }
 
+.struktur thead {
+    text-align: center;
+    vertical-align: middle;
+    background-color: #0272a3;
+    color: #fff;
+    border: #028fcc;
+}
+
 /* Kontak Kami */
 .kontak-kami {
     margin: 4em 0em;
@@ -458,6 +466,44 @@ footer a:hover {
     height: 100%;
 }
 
+.data-section .data-tabs {
+    padding: 60px 15px 50px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+}
+.data-section .data-tabs .tab-item {
+    display: inline-block;
+    margin: 0 5px 5px;
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    background-color: #fff;
+    border: 0.01px solid;
+    color: #0272a3;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.data-section .data-tabs .tab-item:hover:not(.active) {
+    color: #fff;
+    background-color: #0272a3;
+}
+.data-section .data-tabs .tab-item.active {
+    color: #fff;
+    background-color: #0272a3;
+}
+.data-section .tab-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: none;
+}
+.data-section .tab-content.active {
+    display: block;
+    animation: fadeInTop 0.5s ease;
+}
+
 /* Media */
 @media screen and (max-width: 960px) {
     .nav-item .nav-link {
@@ -490,6 +536,10 @@ footer a:hover {
 
     .profil-home {
         margin-top: 3rem;
+    }
+
+    .hero img {
+        height: 8rem;
     }
 
     marquee {
@@ -531,5 +581,14 @@ footer a:hover {
     }
     .profil .picture {
         text-align: center;
+    }
+
+    .data-section .data-tabs .tab-item {
+        font-size: 12px;
+    }
+
+    .struktur p,
+    table {
+        font-size: 12px;
     }
 }

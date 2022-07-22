@@ -6,7 +6,7 @@
         </div>
         <div class="col-lg-6 col-sm-12">
             <h1 class="display-5 fw-bold lh-1 mb-3">Desa karehkel</h1>
-            <p class="lead">Membantu mewujudkan Aspirasi Masyarakat!.</p>
+            <p class="lead">Membantu mewujudkan Aspirasi Masyarakat!</p>
             <p>Jl. Raya Karehkel - Kecamatan Leuwiliang, Kabupaten Bogor, Provinsi Jawa Barat</p>
         </div>
         </div>
