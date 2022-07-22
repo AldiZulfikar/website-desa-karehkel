@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="google-site-verification" content="CqvMHD4xR6MpW12sXvuXLddWcOkLkcLUyr1c9O1O4IY" />
     <title>Desa Karehkel</title>
 
     <!-- shortcut icon -->
