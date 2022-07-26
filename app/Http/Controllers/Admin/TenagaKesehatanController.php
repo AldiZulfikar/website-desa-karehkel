@@ -54,7 +54,7 @@ class TenagaKesehatanController extends Controller
 
         $tenaga_kesehatan->update([
             'jenis' => $request->jenis,
-            'tenaga_kesehatan' => $request->desa,
+            'tenaga_kesehatan' => $request->tenaga_kesehatan,
             'jumlah' => $request->jumlah,
             'user_id' => Auth::id(),
         ]);

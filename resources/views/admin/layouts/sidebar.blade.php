@@ -42,11 +42,27 @@
           </a>
         </li>
         <li class="nav-item">
+          <a class="nav-link text-white {{ (request()->routeIs('admin-geografi')) ? 'active bg-gradient-primary' : '' }}" href="{{route('admin-geografi')}}">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="fas fa-atlas"></i>
+            </div>
+            <span class="nav-link-text ms-1">Letak Geografi Desa</span>
+          </a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link text-white {{ (request()->routeIs('admin-pendidikan-desa')) ? 'active bg-gradient-primary' : '' }}" href="{{route('admin-pendidikan-desa')}}">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">school</i>
             </div>
             <span class="nav-link-text ms-1">Data Pendidikan Desa</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white {{ (request()->routeIs('admin-tenaga-kesehatan')) ? 'active bg-gradient-primary' : '' }}" href="{{route('admin-tenaga-kesehatan')}}">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="fas fa-briefcase-medical"></i>
+            </div>
+            <span class="nav-link-text ms-1">Data Kesehatan Desa</span>
           </a>
         </li>
         <li class="nav-item">

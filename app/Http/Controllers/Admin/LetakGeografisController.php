@@ -38,7 +38,7 @@ class LetakGeografisController extends Controller
 
         letak_geografis::create($data);
         
-        return redirect()->route('admin-letak-geografis')->with('message','success');
+        return redirect()->route('admin-geografi')->with('message','success');
     }
 
     public function edit($id)
@@ -61,7 +61,7 @@ class LetakGeografisController extends Controller
             'user_id' => Auth::id(),
         ]);
     
-        return redirect()->route('admin-letak-geografis')->with('message','success');
+        return redirect()->route('admin-geografi')->with('message','success');
     }
 
     public function delete($id){
@@ -71,6 +71,6 @@ class LetakGeografisController extends Controller
         $letak_geografis->delete($id);
 
         // redirect ke halaman index ss
-        return redirect()->route('admin-letak-geografis')->with('message','success');
+        return redirect()->route('admin-geografi')->with('message','success');
     }
 }

@@ -51,6 +51,20 @@ Route::group(['middleware' => 'auth'], function () {
     Route::put('desa/pendidikan/{id}', [App\Http\Controllers\Admin\DataPendidikanController::class, 'update'])->name('admin-update-pendidikan-desa');
     Route::delete('desa/pendidikan/{id}', [App\Http\Controllers\Admin\DataPendidikanController::class, 'delete'])->name('admin-pendidikan-desa-delete');
 
+    Route::get('desa/kesehatan', [App\Http\Controllers\Admin\TenagaKesehatanController::class, 'index'])->name('admin-tenaga-kesehatan');
+    Route::get('desa/kesehatan/tambah', [App\Http\Controllers\Admin\TenagaKesehatanController::class, 'add'])->name('admin-tambah-kesehatan');
+    Route::post('desa/kesehatan', [App\Http\Controllers\Admin\TenagaKesehatanController::class, 'create'])->name('admin-kesehatan-tambah');
+    Route::get('desa/kesehatan/{id}', [App\Http\Controllers\Admin\TenagaKesehatanController::class, 'edit'])->name('admin-kesehatan-edit');
+    Route::put('desa/kesehatan/{id}', [App\Http\Controllers\Admin\TenagaKesehatanController::class, 'update'])->name('admin-update-kesehatan');
+    Route::delete('desa/kesehatan/{id}', [App\Http\Controllers\Admin\TenagaKesehatanController::class, 'delete'])->name('admin-kesehatan-delete');
+
+    Route::get('desa/geografi', [App\Http\Controllers\Admin\LetakGeografisController::class, 'index'])->name('admin-geografi');
+    Route::get('desa/geografi/tambah', [App\Http\Controllers\Admin\LetakGeografisController::class, 'add'])->name('admin-tambah-geografi');
+    Route::post('desa/geografi', [App\Http\Controllers\Admin\LetakGeografisController::class, 'create'])->name('admin-geografi-tambah');
+    Route::get('desa/geografi/{id}', [App\Http\Controllers\Admin\LetakGeografisController::class, 'edit'])->name('admin-geografi-edit');
+    Route::put('desa/geografi/{id}', [App\Http\Controllers\Admin\LetakGeografisController::class, 'update'])->name('admin-update-geografi');
+    Route::delete('desa/geografi/{id}', [App\Http\Controllers\Admin\LetakGeografisController::class, 'delete'])->name('admin-geografi-delete');
+
     Route::get('desa/pemerintahan', [App\Http\Controllers\Admin\StrukturPemerintahanController::class, 'index'])->name('admin-pemerintahan-desa');
     Route::get('desa/pemerintahan/tambah', [App\Http\Controllers\Admin\StrukturPemerintahanController::class, 'add'])->name('admin-tambah-pemerintahan-desa');
     Route::post('desa/pemerintahan', [App\Http\Controllers\Admin\StrukturPemerintahanController::class, 'create'])->name('admin-pemerintahan-desa-tambah');
