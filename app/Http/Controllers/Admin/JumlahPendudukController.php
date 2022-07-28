@@ -30,17 +30,17 @@ class JumlahPendudukController extends Controller
             'tahun' => 'required',
             'lk' => 'required',
             'pr' => 'required',
-            'jumlah' => 'required',
             'jumlah_kk' => 'required',
             'laju_pertumbuhan' => 'required',
         ]);
 
         $data = $request->all();
+        $data['jumlah'] = $request['lk'] + $request['pr'];
         $data['user_id'] = Auth::id();
 
         jumlah_penduduk::create($data);
         
-        return redirect()->route('admin-jumlah-penduduk')->with('message','success');
+        return redirect()->route('admin-penduduk')->with('message','success');
     }
 
     public function edit($id)
@@ -59,12 +59,13 @@ class JumlahPendudukController extends Controller
             'tahun' => $request->tahun,
             'lk' => $request->lk,
             'pr' => $request->pr,
-            'jumlah' => $request->jumlah,
+            'jumlah' => $request->lk + $request->pr,
             'jumlah_kk' => $request->jumlah_kk,
             'user_id' => Auth::id(),
         ]);
+        
     
-        return redirect()->route('admin-jumlah-penduduk')->with('message','success');
+        return redirect()->route('admin-penduduk')->with('message','success');
     }
 
     public function delete($id){
@@ -74,6 +75,6 @@ class JumlahPendudukController extends Controller
         $jumlah_penduduk->delete($id);
 
         // redirect ke halaman index ss
-        return redirect()->route('admin-jumlah-penduduk')->with('message','success');
+        return redirect()->route('admin-penduduk')->with('message','success');
     }
 }

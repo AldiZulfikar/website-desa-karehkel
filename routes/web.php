@@ -58,6 +58,20 @@ Route::group(['middleware' => 'auth'], function () {
     Route::put('desa/kesehatan/{id}', [App\Http\Controllers\Admin\TenagaKesehatanController::class, 'update'])->name('admin-update-kesehatan');
     Route::delete('desa/kesehatan/{id}', [App\Http\Controllers\Admin\TenagaKesehatanController::class, 'delete'])->name('admin-kesehatan-delete');
 
+    Route::get('desa/peribadatan', [App\Http\Controllers\Admin\PeribadatanController::class, 'index'])->name('admin-peribadatan');
+    Route::get('desa/peribadatan/tambah', [App\Http\Controllers\Admin\PeribadatanController::class, 'add'])->name('admin-tambah-peribadatan');
+    Route::post('desa/peribadatan', [App\Http\Controllers\Admin\PeribadatanController::class, 'create'])->name('admin-peribadatan-tambah');
+    Route::get('desa/peribadatan/{id}', [App\Http\Controllers\Admin\PeribadatanController::class, 'edit'])->name('admin-peribadatan-edit');
+    Route::put('desa/peribadatan/{id}', [App\Http\Controllers\Admin\PeribadatanController::class, 'update'])->name('admin-update-peribadatan');
+    Route::delete('desa/peribadatan/{id}', [App\Http\Controllers\Admin\PeribadatanController::class, 'delete'])->name('admin-peribadatan-delete');
+
+    Route::get('desa/penduduk', [App\Http\Controllers\Admin\JumlahPendudukController::class, 'index'])->name('admin-penduduk');
+    Route::get('desa/penduduk/tambah', [App\Http\Controllers\Admin\JumlahPendudukController::class, 'add'])->name('admin-tambah-penduduk');
+    Route::post('desa/penduduk', [App\Http\Controllers\Admin\JumlahPendudukController::class, 'create'])->name('admin-penduduk-tambah');
+    Route::get('desa/penduduk/{id}', [App\Http\Controllers\Admin\JumlahPendudukController::class, 'edit'])->name('admin-penduduk-edit');
+    Route::put('desa/penduduk/{id}', [App\Http\Controllers\Admin\JumlahPendudukController::class, 'update'])->name('admin-update-penduduk');
+    Route::delete('desa/penduduk/{id}', [App\Http\Controllers\Admin\JumlahPendudukController::class, 'delete'])->name('admin-penduduk-delete');
+
     Route::get('desa/geografi', [App\Http\Controllers\Admin\LetakGeografisController::class, 'index'])->name('admin-geografi');
     Route::get('desa/geografi/tambah', [App\Http\Controllers\Admin\LetakGeografisController::class, 'add'])->name('admin-tambah-geografi');
     Route::post('desa/geografi', [App\Http\Controllers\Admin\LetakGeografisController::class, 'create'])->name('admin-geografi-tambah');
