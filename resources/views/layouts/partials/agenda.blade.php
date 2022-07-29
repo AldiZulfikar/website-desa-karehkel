@@ -8,11 +8,11 @@
         </div>
         <div class="schedule mb-5">
             <div class="row">
-                <div class="div col-lg-6">
+                <div class="col-lg-6">
                     <img class="rounded-lg-3" src="{{asset('/frontend-assets/assets/img/agenda.jpg')}}" alt="">
                 </div>
-                @foreach($agenda as $data_agenda)
-                <div class="col-md-6">
+                <div class="col-lg-6">
+                    @foreach($agenda as $data_agenda)
                     <table class="table table-borderless">
                         <thead>
                             <tr>
@@ -26,8 +26,8 @@
                             </table>
                         </tbody>
                     </table>
+                    @endforeach
                 </div>
-                @endforeach
             </div>
         </div>
       <div class="agenda-selengkapnya text-center">
