@@ -7,19 +7,22 @@ use Illuminate\Http\Request;
 use App\Models\berita_desa;
 use App\Models\agenda_desa;
 use App\Models\profil_desa;
+use App\Models\jumlah_penduduk;
 use Illuminate\Support\Str;
 
 class homepageController extends Controller
 {
     public function index ()
     {
-        $agenda = agenda_desa::paginate(4);
-        $berita = berita_desa::paginate(6);
+        $agenda = agenda_desa::paginate(3)->sortByDesc('id');
+        $berita = berita_desa::paginate(6)->sortByDesc('id');
         $profil = profil_desa::all()->first();
+        $jumlah = jumlah_penduduk::all()->sortByDesc('id')->first();
         return view("pages.homepage",[
             'agenda' => $agenda,
             'berita' => $berita,
-            'profil' => $profil
+            'profil' => $profil,
+            'jumlah' => $jumlah
         ]);
     }
 }

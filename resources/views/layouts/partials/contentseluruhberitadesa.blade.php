@@ -9,7 +9,7 @@
         <div class="row justify-content-center">
             @foreach($berita as $data_berita)
             <div class="col-md-4 mb-4">
-                <div class="card">
+                <div class="card p-3 rounded-3 shadow-lg">
                     <img
                     src="{{$data_berita->gambar_berita ? asset('upload/' .$data_berita->gambar_berita) : asset('/frontend-assets/assets/img/berita.png')}}"
                     class="card-img-top"

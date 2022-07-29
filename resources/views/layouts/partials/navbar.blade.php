@@ -1,9 +1,9 @@
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
-    <div class="container">
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+    <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="{{asset('/frontend-assets/assets/img/logo-kabupaten.webp')}}" alt="" height="48" />
-        <p>DESA KAREHKEL</p>
+        <p style="color: #00264d;">DESA KAREHKEL</p>
       </a>
       <button
         class="navbar-toggler"
@@ -38,7 +38,7 @@
           <li class="nav-item">
             <a class="nav-link" href="{{ route('kontak-desa') }}">KONTAK KAMI</a>
           </li>
-          @guest
+          {{-- @guest
           @if (Route::has('login'))
               <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">MASUK</a></li>
           @endif
@@ -52,7 +52,7 @@
               <form id="logout-form" action="{{ route('logout') }}" method="POST">
               @csrf
               </form>
-          @endguest
+          @endguest --}}
         </ul>
       </div>
     </div>

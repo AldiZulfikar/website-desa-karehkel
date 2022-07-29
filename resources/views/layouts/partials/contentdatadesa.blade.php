@@ -1,11 +1,13 @@
 <div class="data-section">  
-  <div class="row">
-    <div class="data-tabs">
-      <span class="tab-item active" data-target=".geografi">Geografi</span>
-      <span class="tab-item" data-target=".kependudukan">Kependudukan</span>
-      <span class="tab-item" data-target=".pendidikan">Pendidikan</span>
-      <span class="tab-item" data-target=".kesehatan">Kesehatan</span>
-      <span class="tab-item" data-target=".peribadatan">Peribadatan</span>
+  <div class="container">
+    <div class="row">
+      <div class="data-tabs">
+        <span class="tab-item active" data-target=".geografi">Geografi</span>
+        <span class="tab-item" data-target=".kependudukan">Kependudukan</span>
+        <span class="tab-item" data-target=".pendidikan">Pendidikan</span>
+        <span class="tab-item" data-target=".kesehatan">Kesehatan</span>
+        <span class="tab-item" data-target=".peribadatan">Peribadatan</span>
+      </div>
     </div>
   </div>
   <section class="struktur geografi tab-content active">
@@ -49,12 +51,14 @@
               </tr>
             </thead>
             <tbody>
+            @foreach($letak_geografis as $letak_geografis)
               <tr>
-                <th>Sebelah Selatan</th>
-                <td>Leuwiliang</td>
-                <td>Leuwiliang</td>
-                <td>Bogor</td>
+                <th>{{$letak_geografis -> batas}}</th>
+                <td>{{$letak_geografis -> desa}}</td>
+                <td>{{$letak_geografis -> kecamatan}}</td>
+                <td>{{$letak_geografis -> kabupaten}}</td>
               </tr>
+            @endforeach
             </tbody>
           </table>
         </div>
@@ -85,14 +89,16 @@
               </tr>
             </thead>
             <tbody class="data-table">
+              @foreach($jumlah_penduduk as $jumlah_penduduk)
               <tr>
-                <th>2000</th>
-                <td>20</td>
-                <td>10</td>
-                <td>30</td>
-                <td>26</td>
-                <td>40%</td>
+                <th>{{$jumlah_penduduk->tahun}}</th>
+                <td>{{$jumlah_penduduk->lk}}</td>
+                <td>{{$jumlah_penduduk->pr}}</td>
+                <td>{{$jumlah_penduduk->jumlah}}</td>
+                <td>{{$jumlah_penduduk->jumlah_kk}}</td>
+                <td>{{$jumlah_penduduk->laju_pertumbuhan}}%</td>
               </tr>
+              @endforeach
             </tbody>
           </table>
         </div>
@@ -153,11 +159,13 @@
                 </tr>
               </thead>
               <tbody class="data-table">
+                @foreach($tenaga_kesehatan as $tenaga_kesehatan)
                 <tr>
-                  <th>Medis</th>
-                  <td>Dokter Umum</td>
-                  <td>20</td>
+                  <th>{{$tenaga_kesehatan -> jenis}}</th>
+                  <td>{{$tenaga_kesehatan -> tenaga_kesehatan}}</td>
+                  <td>{{$tenaga_kesehatan -> jumlah}}</td>
                 </tr>
+                @endforeach
               </tbody>
             </table>
           </div>
@@ -181,10 +189,12 @@
                 </tr>
               </thead>
               <tbody>
+                @foreach($peribadatan as $peribadatan)
                 <tr>
-                  <th>Masjid</th>
-                  <td>20</td>
+                  <th>{{$peribadatan -> tempat_ibadah}}</th>
+                  <td>{{$peribadatan -> jumlah}}</td>
                 </tr>
+                @endforeach
               </tbody>
             </table>
           </div>

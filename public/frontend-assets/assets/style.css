@@ -6,7 +6,6 @@
 
 /* Navbar */
 .navbar {
-    background-color: #028fcc;
     padding: 0;
 }
 
@@ -18,11 +17,12 @@
 
 .navbar .navbar-brand img {
     margin-right: 1.5rem;
+    margin-left: 2.8rem;
     float: left;
 }
 
 .navbar .navbar-brand p {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.5rem;
     float: right;
     margin: 0;
@@ -35,15 +35,16 @@
 
 .navbar .nav-item {
     padding: 1em 0em;
+    margin-right: 1.5rem;
 }
 
-.navbar .nav-item:hover {
-    background-color: #0272a3;
+.navbar .nav-item .nav-link:hover {
+    color: #fcc201;
 }
 
 .navbar .nav-link {
-    margin: 0 0.5rem;
-    color: #fff;
+    margin: 0 0.5em;
+    color: #000;
 }
 
 /* Jumbotron */
@@ -55,53 +56,18 @@ header {
 }
 
 .jumbotron {
-    text-align: center;
-}
-.jumbotron img {
-    height: 90vh;
-}
-
-.jumbotron .welcome {
-    padding-top: 200px;
-}
-
-.jumbotron h4 {
-    font-size: 2em;
-    font-weight: 700;
-    color: #fff000;
-}
-
-.jumbotron h1 {
-    font-size: 4em;
-    font-weight: 700;
+    background-color: #00264d;
     color: #fff;
-}
-
-.jumbotron .btn {
-    background: #028fcc;
-    border: 2px solid transparent;
-    border-radius: 0.75em;
-    cursor: pointer;
-    color: #fff;
-    font-size: 1em;
-    font-weight: 600;
-    outline: none;
-    padding: 0.5em 1.5em;
-}
-
-.jumbotron .btn:hover {
-    background-color: #0272a3;
-    border: 2px solid transparent;
-    color: #fff000;
 }
 
 marquee {
-    background-color: #fff000;
-    font-weight: 700;
+    background-color: #fcc201;
+    font-weight: 600;
     height: 33px;
     font-size: 18px;
     justify-content: center;
     align-items: center;
+    color: #00264d;
 }
 
 /* profil home */
@@ -110,7 +76,7 @@ marquee {
 }
 .profil-home h2 {
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 600;
     color: #333333;
     margin-bottom: 1.5rem;
 }
@@ -120,7 +86,7 @@ marquee {
 }
 
 .profil-home button {
-    background: #028fcc;
+    background: #00264d;
     border: 2px solid transparent;
     border-radius: 0.75em;
     cursor: pointer;
@@ -142,9 +108,13 @@ marquee {
     margin: 4em 0em;
 }
 
+.agenda img {
+    width: 30rem;
+}
+
 .agenda h2 {
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 600;
     color: #333333;
     margin-top: 4.5rem;
     margin-bottom: 2.5rem;
@@ -153,7 +123,7 @@ marquee {
 .agenda thead {
     font-size: 1.25em;
     font-weight: 600;
-    color: #028fcc;
+    color: #00264d;
 }
 
 .agenda .month {
@@ -167,13 +137,13 @@ marquee {
     margin-right: 0.5em;
     width: 2em;
     height: 2em;
-    background-color: #028fcc;
+    background-color: #00264d;
 }
 
 .agenda h5 {
     font-size: 1.25em;
     font-weight: 600;
-    color: #028fcc;
+    color: #00264d;
 }
 
 .agenda .day {
@@ -188,7 +158,7 @@ marquee {
     color: #fff;
     margin-right: 0.5em;
     width: 2em;
-    background-color: #028fcc;
+    background-color: #00264d;
 }
 
 .agenda p {
@@ -196,7 +166,7 @@ marquee {
 }
 
 .agenda button {
-    background: #028fcc;
+    background: #00264d;
     border: 2px solid transparent;
     border-radius: 0.75em;
     cursor: pointer;
@@ -215,8 +185,8 @@ marquee {
 
 .garis {
     margin-top: 8rem;
-    background-color: #0272a3;
-    height: 30vh;
+    background-color: #00264d;
+    height: 45vh;
     align-items: center;
     justify-content: center;
 }
@@ -226,13 +196,18 @@ marquee {
 }
 .garis p {
     margin-top: 0.5rem;
-    font-size: 1.5rem;
-    font-weight: 700;
+    margin-bottom: 2rem;
+    font-size: 2em;
+    font-weight: 600;
     color: #fff;
+}
+.garis h3 {
+    color: #fff;
+    font-size: 1.5rem;
 }
 
 .hero {
-    background-color: #0272a3;
+    background-color: #00264d;
     color: #fff;
 }
 
@@ -243,7 +218,7 @@ marquee {
 
 .berita h2 {
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 600;
     color: #333333;
     margin-top: 4.5rem;
     margin-bottom: 2.5rem;
@@ -264,7 +239,7 @@ marquee {
 .berita .card-body h5 {
     font-size: 1.25em;
     font-weight: 600;
-    color: #028fcc;
+    color: #00264d;
     height: 3em;
 }
 
@@ -280,7 +255,7 @@ marquee {
 }
 
 .berita button {
-    background: #028fcc;
+    background: #00264d;
     border: 2px solid transparent;
     border-radius: 0.75em;
     cursor: pointer;
@@ -299,11 +274,12 @@ marquee {
 
 /* Site Footer */
 .site-footer {
-    background-color: #028fcc;
+    background-color: #00264d;
     align-items: center;
     display: flex;
     justify-content: space-between;
     padding: 2em 0em;
+    margin-top: 8rem;
 }
 
 .site-footer .profile {
@@ -326,7 +302,7 @@ marquee {
 
 .site-footer .title {
     font-size: 3em;
-    font-weight: 700;
+    font-weight: 600;
     margin-left: 0.5em;
 }
 
@@ -339,6 +315,11 @@ marquee {
 
 .site-footer li {
     list-style: none;
+}
+
+.contact-footer img {
+    margin-top: -6rem;
+    width: 30rem;
 }
 
 .site-footer .contact .text {
@@ -360,11 +341,11 @@ footer a {
 }
 
 footer i:hover {
-    color: #028fcc;
+    color: #00264d;
 }
 
 footer a:hover {
-    color: #028fcc;
+    color: #00264d;
 }
 
 /* Profil Page */
@@ -375,7 +356,7 @@ footer a:hover {
 
 .profil h2 {
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 600;
     color: #333333;
     margin-bottom: 4.5rem;
 }
@@ -391,7 +372,7 @@ footer a:hover {
 .misi h2,
 .struktur h2 {
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 600;
     color: #333333;
     margin: 1rem 0;
 }
@@ -414,7 +395,7 @@ footer a:hover {
 
 .data-desa h2 {
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 600;
     color: #333333;
     margin-bottom: 4.5rem;
 }
@@ -422,9 +403,9 @@ footer a:hover {
 .struktur thead {
     text-align: center;
     vertical-align: middle;
-    background-color: #0272a3;
+    background-color: #00264d;
     color: #fff;
-    border: #028fcc;
+    border: #00264d;
 }
 
 /* Kontak Kami */
@@ -434,7 +415,7 @@ footer a:hover {
 
 .kontak-kami h2 {
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 600;
     color: #333333;
     margin-bottom: 4.5rem;
 }
@@ -488,11 +469,11 @@ footer a:hover {
 }
 .data-section .data-tabs .tab-item:hover:not(.active) {
     color: #fff;
-    background-color: #0272a3;
+    background-color: #00264d;
 }
 .data-section .data-tabs .tab-item.active {
     color: #fff;
-    background-color: #0272a3;
+    background-color: #00264d;
 }
 .data-section .tab-content {
     flex: 0 0 100%;
@@ -512,34 +493,38 @@ footer a:hover {
 }
 
 @media screen and (max-width: 768px) {
+    .contact-footer img {
+        margin-top: 1rem;
+        width: 23rem;
+    }
     .navbar-brand img {
         margin-top: 0.45rem;
         margin-bottom: 0.45rem;
     }
+    .navbar .navbar-brand img {
+        margin-left: 1.5rem;
+        float: left;
+    }
     /* Jumbotron */
-    .jumbotron {
-        height: 25vh;
-    }
-    .jumbotron img {
-        height: 25vh;
-    }
-    .jumbotron h4 {
-        margin-top: 2em;
-        font-size: 20px;
-    }
-    .jumbotron h1 {
-        font-size: 25px;
-    }
-    .jumbotron .btn {
-        font-size: 10px;
+    .jumbotron p {
+        font-size: 1rem;
     }
 
     .profil-home {
         margin-top: 3rem;
     }
 
+    .agenda img {
+        width: 22rem;
+        align-items: center;
+    }
+
     .hero img {
-        height: 8rem;
+        height: 10rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
     }
 
     marquee {
@@ -547,12 +532,16 @@ footer a:hover {
         font-size: 16px;
     }
 
+    .garis {
+        height: 70vh;
+    }
+
     .garis img {
         margin-top: 3.5rem;
         height: 7rem;
     }
     .garis p {
-        font-size: 15px;
+        font-size: 2rem;
     }
 
     /* Site Footer */
@@ -564,10 +553,13 @@ footer a:hover {
     }
 
     .site-footer .title {
-        font-size: 2.5em;
-        font-weight: 700;
+        font-size: 2em;
+        font-weight: 600;
         margin-left: 0.5em;
         text-align: start;
+    }
+    .site-footer p {
+        font-size: 1rem;
     }
 
     .profil-home img {
@@ -584,11 +576,11 @@ footer a:hover {
     }
 
     .data-section .data-tabs .tab-item {
-        font-size: 12px;
+        font-size: 1rem;
     }
 
     .struktur p,
     table {
-        font-size: 12px;
+        font-size: 1rem;
     }
 }

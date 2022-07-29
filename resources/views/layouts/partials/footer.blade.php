@@ -2,7 +2,7 @@
 <section class="site-footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 profile">
+        <div class="col-lg-6 profile">
           <div class="desa mb-3">
             <a class="logo">
               <img src="{{asset('/frontend-assets/assets/img/logo-kabupaten.webp')}}" alt="" />
@@ -38,11 +38,11 @@
             </li>
           </div>
         </div>
-        <div class="col-md-6 maps text-center">
+        <div class="col-lg-6 maps text-center">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31710.26355576858!2d106.61715536824669!3d-6.54906714684211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69dc00d5e2f791%3A0xc668c0ec1c0a2903!2sKarehkel%2C%20Kec.%20Leuwiliang%2C%20Kabupaten%20Bogor%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1657591953001!5m2!1sid!2sid"
-            width="300"
             height="300"
+            width="100%"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"

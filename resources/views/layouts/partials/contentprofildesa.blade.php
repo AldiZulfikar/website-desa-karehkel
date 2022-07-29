@@ -24,7 +24,7 @@
     <div class="container visi-content rounded-3 border shadow-lg">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2>Visi Desa</h2>
+          <h2>VISI</h2>
         </div>
       </div>
       <div class="row">
@@ -43,7 +43,7 @@
     <div class="container misi-content rounded-3 border shadow-lg">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2>Misi Desa</h2>
+          <h2>MISI</h2>
         </div>
       </div>
       <div class="row">
@@ -61,13 +61,13 @@
     <div class="container">
       <div class="row text-center">
         <div class="col">
-          <h2>Struktur Desa</h2>
+          <h2>STRUKTUR PENGURUS</h2>
         </div>
       </div>
       <div class="row">
         <div class="col">
           <p class="text-center">
-            Berikut ini merupakan struktur desa periode 2022-2027 yang
+            Berikut ini merupakan struktur pengurus yang
             terdapat pada Desa Karehkel, Kecamatan Leuwiliang, Kabupaten
             Bogor.
           </p>

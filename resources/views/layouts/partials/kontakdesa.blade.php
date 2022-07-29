@@ -7,15 +7,16 @@
         </div>
       </div>
       <div class="row">
-        <div class="col">
-          <p>
-            Berikut ini merupakan kontak Desa Karehkel yang dapat dihubungi.
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
+        <div class="col-lg-6">
           <div class="contact-footer">
+            <img src="{{asset('/frontend-assets/assets/img/kontak.jpg')}}" alt="" />
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="contact-footer">
+            <p>
+              Berikut ini merupakan kontak Desa Karehkel yang dapat dihubungi.
+            </p>
             <table class="table table-borderless">
               <tbody>
                 <tr>

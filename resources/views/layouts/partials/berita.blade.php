@@ -3,13 +3,13 @@
     <div class="container">
         <div class="row text-center">
             <div class="col">
-                <h2>Berita Desa</h2>
+                <h2>BERITA TERKINI</h2>
             </div>
         </div>
         <div class="row justify-content-center">
             @foreach($berita as $data_berita)
             <div class="col-md-4 mb-4">
-                <div class="card">
+                <div class="card shadow-lg p-3 rounded-3">
                     <img
                     src="{{$data_berita->gambar_berita ? asset('upload/' .$data_berita->gambar_berita) : asset('/frontend-assets/assets/img/berita.png')}}"
                     class="card-img-top"
@@ -30,7 +30,7 @@
             </div>
             @endforeach
         </div>
-      <div class="berita-selengkapnya text-center">
+      <div class="berita-selengkapnya text-center mt-4">
         <a href="/berita">
           <button type="button" class="btn">Selengkapnya</button>
         </a>
