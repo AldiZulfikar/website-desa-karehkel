@@ -9,7 +9,7 @@
         <div class="schedule mb-5">
             <div class="row">
                 <div class="col-lg-6">
-                    <img class="rounded-lg-3" src="{{asset('/frontend-assets/assets/img/agenda.jpg')}}" alt="">
+                    <img class="rounded-lg-3" src="{{asset('/frontend-assets/assets/img/agenda.jpg')}}" alt="Agenda Desa Karehkel">
                 </div>
                 <div class="col-lg-6">
                     @foreach($agenda as $data_agenda)
@@ -40,7 +40,7 @@
   <!-- Agenda End -->
 
   <div class="garis text-center container-fluid">
-    <img src="{{asset('/frontend-assets/assets/img/logo-kabupaten.webp')}}" alt="" height="48" />
+    <img src="{{asset('/frontend-assets/assets/img/logo-kabupaten.webp')}}" alt="Desa Karehkel" height="48" />
         <p>DATA PENDUDUK</p>
           <div class="row text-center mt-4">
             <div class="col-lg-4 col-md-4 col-sm-12 ">

@@ -7,7 +7,7 @@
       </div>
       <div class="row">
         <div class="picture">
-          <img src="{{$berita->gambar_berita ? asset('upload/' .$berita->gambar_berita) : asset('/frontend-assets/assets/img/berita.png')}}" alt="" />
+          <img src="{{$berita->gambar_berita ? asset('upload/' .$berita->gambar_berita) : asset('/frontend-assets/assets/img/berita.png')}}" alt="{{$berita->judul}}" />
         </div>
         <div class="">
           <p>

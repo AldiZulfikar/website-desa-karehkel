@@ -13,7 +13,7 @@
                     <img
                     src="{{$data_berita -> gambar_berita ? asset('upload/' .$data_berita->gambar_berita) : asset('/frontend-assets/assets/img/berita.png')}}"
                     class="card-img-top"
-                    alt="..."
+                    alt="{{$data_berita->judul}}"
                     />
                     <div class="card-body">
                     <a href="/baca-berita/{{$data_berita->slug}}">

@@ -9,7 +9,7 @@
       <div class="row">
         <div class="col-lg-6">
           <div class="contact-footer">
-            <img src="{{asset('/frontend-assets/assets/img/kontak.jpg')}}" alt="" />
+            <img src="{{asset('/frontend-assets/assets/img/kontak.jpg')}}" alt="kontak desa karehkel" />
           </div>
         </div>
         <div class="col-lg-6">
