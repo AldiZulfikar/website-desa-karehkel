@@ -19,8 +19,8 @@
                       <input type="file" name="gambar_berita" class="form-control-file" id="exampleFormControlFile1">
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlInput1">Judul</label>
-                        <input type="text" name="judul" class="form-control" id="exampleFormControlInput1" value="{{$berita->judul}}">
+                        <label for="exampleFormControlInput1">Judul | Maksimal 50 karakter</label>
+                        <input type="text" required maxlength="50" name="judul" class="form-control" id="exampleFormControlInput1" value="{{$berita->judul}}">
                     </div>
                     <div class="form-group">
                       <label for="exampleFormControlSelect1">Status</label>
@@ -30,8 +30,8 @@
                       </select>
                   </div>
                   <div class="form-group">
-                      <label for="exampleFormControlTextarea1">Konten</label>
-                      <textarea name="konten" class="form-control summernote" id="exampleFormControlTextarea1" rows="3">{{$berita->konten}}</textarea>
+                      <label for="exampleFormControlTextarea1">Konten | Maksimal 4000 karakter</label>
+                      <textarea name="konten" required maxlength="4000" class="form-control summernote" id="summernote" rows="3">{{$berita->konten}}</textarea>
                   </div>
                     
                     <div class="col-12 text-end pb-4">

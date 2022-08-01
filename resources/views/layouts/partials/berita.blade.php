@@ -11,7 +11,7 @@
             <div class="col-md-4 mb-4">
                 <div class="card shadow-lg p-3 rounded-3">
                     <img
-                    src="{{$data_berita->gambar_berita ? asset('upload/' .$data_berita->gambar_berita) : asset('/frontend-assets/assets/img/berita.png')}}"
+                    src="{{$data_berita -> gambar_berita ? asset('upload/' .$data_berita->gambar_berita) : asset('/frontend-assets/assets/img/berita.png')}}"
                     class="card-img-top"
                     alt="..."
                     />
@@ -23,7 +23,7 @@
                     </a>
                     <h6 class="date"><i class="far fa-user"></i> {{ $data_berita->users->name }} &nbsp;<i class="far fa-calendar-alt"></i> {{\Carbon\Carbon::parse($data_berita->created_at)->format('d F Y')}}</h6>
                     <p class="card-text">
-                        {{Str::limit($data_berita->konten, 94)}}
+                        {!!Str::limit($data_berita->konten, 94)!!}
                     </p>
                     </div>
                 </div>

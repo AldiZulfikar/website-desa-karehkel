@@ -16,31 +16,31 @@
                     <div class="form-group">
                       <img src="{{ asset('upload/' . $struktur->foto_pengurus) }}" width="200" alt=""><br>
                       <label for="exampleFormControlFile1">Foto Pengurus</label>
-                      <input type="file" name="foto_pengurus" class="form-control-file" id="exampleFormControlFile1">
+                      <input type="file" required name="foto_pengurus" class="form-control-file" id="exampleFormControlFile1">
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Nama Pengurus</label>
-                        <input type="text" name="nama" class="form-control" id="exampleFormControlInput1" value="{{$struktur->nama}}">
+                        <input type="text" required name="nama" class="form-control" id="exampleFormControlInput1" value="{{$struktur->nama}}">
                     </div>
                     <div class="form-group">
                       <label for="exampleFormControlInput1">Jabatan</label>
-                      <input type="text" name="jabatan" class="form-control" id="exampleFormControlInput1" value="{{$struktur->jabatan}}">
+                      <input type="text" required name="jabatan" class="form-control" id="exampleFormControlInput1" value="{{$struktur->jabatan}}">
                     </div>
                     <div class="form-group">
                       <label for="exampleFormControlInput1">Tempat Lahir</label>
-                      <input type="text" name="tempat_lahir" class="form-control" id="exampleFormControlInput1" value="{{$struktur->tempat_lahir}}">
+                      <input type="text" required name="tempat_lahir" class="form-control" id="exampleFormControlInput1" value="{{$struktur->tempat_lahir}}">
                     </div>
                     <div class="form-group">
                       <label for="exampleFormControlInput1">Tanggal Lahir</label>
-                      <input type="date" name="tanggal_lahir" class="form-control" id="exampleFormControlInput1" value="{{$struktur->tanggal_lahir}}">
+                      <input type="date" required name="tanggal_lahir" class="form-control" id="exampleFormControlInput1" value="{{$struktur->tanggal_lahir}}">
                     </div>
                     <div class="form-group">
                       <label for="exampleFormControlInput1">Pendidikan</label>
-                      <input type="text" name="pendidikan" class="form-control" id="exampleFormControlInput1" value="{{$struktur->pendidikan}}">
+                      <input type="text" required name="pendidikan" class="form-control" id="exampleFormControlInput1" value="{{$struktur->pendidikan}}">
                     </div>
                     <div class="form-group">
                       <label for="exampleFormControlInput1">NIP</label>
-                      <input type="number" name="nip" class="form-control" id="exampleFormControlInput1" value="{{$struktur->nip}}">
+                      <input type="number" required name="nip" class="form-control" id="exampleFormControlInput1" value="{{$struktur->nip}}">
                     </div>
                     <div class="col-12 text-end pb-4">
                         <button class="btn bg-gradient-primary mb-0">Simpan</button>

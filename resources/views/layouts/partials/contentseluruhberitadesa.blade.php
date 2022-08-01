@@ -23,7 +23,7 @@
                     </a>
                     <h6 class="date">{{\Carbon\Carbon::parse($data_berita->created_at)->format('d F Y')}}</h6>
                     <p class="card-text">
-                        {{Str::limit($data_berita->konten, 94)}}
+                        {!!Str::limit($data_berita->konten, 94)!!}
                     </p>
                     </div>
                 </div>

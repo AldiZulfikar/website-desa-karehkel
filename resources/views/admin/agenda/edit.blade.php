@@ -15,7 +15,7 @@
                 @method('put')
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Tanggal Agenda</label>
-                        <input type="date" name="nama_agenda" class="form-control" id="exampleFormControlInput1" value="{{$agenda->nama_agenda}}">
+                        <input required type="date" name="nama_agenda" class="form-control" id="exampleFormControlInput1" value="{{$agenda->nama_agenda}}">
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlSelect1">Status</label>
@@ -25,8 +25,8 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Deskripsi Agenda</label>
-                        <textarea name="deskripsi" class="form-control summernote" id="exampleFormControlTextarea1" rows="3">{{$agenda->deskripsi}}</textarea>
+                        <label for="exampleFormControlTextarea1">Nama Agenda | Maksimal 50 Karakter</label>
+                        <textarea required maxlength="50" name="deskripsi" class="form-control summernote" id="exampleFormControlTextarea1" rows="3">{{$agenda->deskripsi}}</textarea>
                     </div>
                     <div class="col-12 text-end pb-4">
                         <button class="btn bg-gradient-primary mb-0" href="{{route('admin-agenda')}}">Simpan</button>

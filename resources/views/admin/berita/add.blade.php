@@ -14,11 +14,11 @@
                 @csrf
                     <div class="form-group">
                       <label for="exampleFormControlFile1">Gambar Berita</label>
-                      <input type="file" name="gambar_berita" class="form-control-file" id="exampleFormControlFile1">
+                      <input type="file" required name="gambar_berita" class="form-control-file" id="exampleFormControlFile1">
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlInput1">Judul</label>
-                        <input type="text" name="judul" class="form-control" id="exampleFormControlInput1">
+                        <label for="exampleFormControlInput1">Judul | Maksimal 50 Karakter</label>
+                        <input type="text" required maxlength="50" name="judul" class="form-control" id="exampleFormControlInput1">
                     </div>
                     <div class="form-group">
                       <label for="exampleFormControlSelect1">Status</label>
@@ -28,8 +28,8 @@
                       </select>
                   </div>
                   <div class="form-group">
-                      <label for="exampleFormControlTextarea1">Konten</label>
-                      <textarea name="konten" class="form-control summernote" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      <label for="exampleFormControlTextarea1">Konten | Maksimal 4000 Karakter</label>
+                      <textarea name="konten" required maxlength="1000" class="form-control" id="summernote" rows="12"></textarea>
                   </div>
                     <div class="col-12 text-end pb-4">
                         <button class="btn bg-gradient-primary mb-0" href="{{route('admin-agenda')}}">Simpan</button>
