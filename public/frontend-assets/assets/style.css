@@ -317,11 +317,6 @@ marquee {
     list-style: none;
 }
 
-.contact-footer img {
-    margin-top: -6rem;
-    width: 30rem;
-}
-
 .site-footer .contact .text {
     padding-left: 1em;
 }
@@ -493,10 +488,6 @@ footer a:hover {
 }
 
 @media screen and (max-width: 768px) {
-    .contact-footer img {
-        margin-top: 1rem;
-        width: 23rem;
-    }
     .navbar-brand img {
         margin-top: 0.45rem;
         margin-bottom: 0.45rem;

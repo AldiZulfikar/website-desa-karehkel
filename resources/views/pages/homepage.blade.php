@@ -19,7 +19,8 @@
   </marquee>
     @include('layouts.partials.desa')
     @include('layouts.partials.agenda')
-    @include('layouts.partials.berita') 
+    @include('layouts.partials.berita')
+    @include('layouts.partials.hubungikami') 
 </body>
 @include('layouts.partials.footer')
 @endsection
