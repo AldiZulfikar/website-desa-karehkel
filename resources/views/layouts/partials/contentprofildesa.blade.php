@@ -74,9 +74,9 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-12 mb-5">
-          @foreach($struktur_pemerintahan as $data)
-          <div class="pengurus col-lg-3 wow slideInUp">
+        @foreach($struktur_pemerintahan as $data)
+        <div class="col-lg-4 mb-5">
+          <div class="pengurus col-lg-10 wow slideInUp">
             <div class="rounded-3 shadow-lg overflow-hidden">
               <div class="position-relative overflow-hidden">
                 <img class="img-fluid w-100" src="{{$data->foto_pengurus ? asset('upload/' . $data->foto_pengurus) : asset('/frontend-assets/assets/img/user-foto.jpg')}}" alt="" />
@@ -90,8 +90,8 @@
               </div>
             </div>
           </div>
-          @endforeach
         </div>
+        @endforeach
       </div>
     </div>
   </section>

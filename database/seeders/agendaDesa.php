@@ -20,5 +20,17 @@ class agendaDesa extends Seeder
             'is_active' => true,
             'user_id' => 1
         ]);
+        DB::table('agenda_desas')->insert([
+            'nama_agenda' => '31-07-2022',
+            'deskripsi' => '1 Muharam',
+            'is_active' => true,
+            'user_id' => 1
+        ]);
+        DB::table('agenda_desas')->insert([
+            'nama_agenda' => '25-08-2022',
+            'deskripsi' => 'Penutupan KKN UIN Jakarta',
+            'is_active' => true,
+            'user_id' => 1
+        ]);
     }
 }

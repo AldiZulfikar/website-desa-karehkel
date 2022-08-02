@@ -15,11 +15,33 @@ class dataPendidikanDesa extends Seeder
     public function run()
     {
         DB::table('data_pendidikan_desas')->insert([
-            'nama_sekolah' => 'SDN Desa 1',
-            'jumlah_guru' => 30,
-            'jumlah_murid' => 100,
-            'lokasi' => 'bogor',
+            'nama_sekolah' => 'SDN Karehkel 01',
+            'jumlah_guru' => 15,
+            'jumlah_murid' => 380,
+            'lokasi' => 'Karehkel',
             'user_id' => 1
         ]);
+        DB::table('data_pendidikan_desas')->insert([
+            'nama_sekolah' => 'SDN Karehkel 02',
+            'jumlah_guru' => 15,
+            'jumlah_murid' => 400,
+            'lokasi' => 'Karehkel',
+            'user_id' => 1
+        ]);
+        DB::table('data_pendidikan_desas')->insert([
+            'nama_sekolah' => 'SDN Karehkel 03',
+            'jumlah_guru' => 15,
+            'jumlah_murid' => 380,
+            'lokasi' => 'Karehkel',
+            'user_id' => 1
+        ]);
+        DB::table('data_pendidikan_desas')->insert([
+            'nama_sekolah' => 'SDN Karehkel 04',
+            'jumlah_guru' => 15,
+            'jumlah_murid' => 350,
+            'lokasi' => 'Karehkel',
+            'user_id' => 1
+        ]);
+
     }
 }

@@ -20,6 +20,10 @@ class DatabaseSeeder extends Seeder
             dataPendidikanDesa::class,
             profilDesa::class,
             strukturPemerintahanDesa::class,
+            jumlahPenduduk::class,
+            letakGeografis::class,
+            peribadatan::class,
+            tenagaKesehatan::class,
             users::class
         ]);
     }

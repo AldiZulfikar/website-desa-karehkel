@@ -14,11 +14,31 @@ class jumlahPenduduk extends Seeder
      */
     public function run()
     {
-        DB::table('data_pendidikan_desas')->insert([
-            'nama_sekolah' => 'SDN Desa 1',
-            'jumlah_guru' => 30,
-            'jumlah_murid' => 100,
-            'lokasi' => 'bogor',
+        DB::table('jumlah_penduduks')->insert([
+            'tahun' => '2020',
+            'lk' => 50,
+            'pr' => 50,
+            'jumlah' => 100,
+            'jumlah_kk' => 200,
+            'laju_pertumbuhan' => 80,
+            'user_id' => 1
+        ]);
+        DB::table('jumlah_penduduks')->insert([
+            'tahun' => '2021',
+            'lk' => 30,
+            'pr' => 70,
+            'jumlah' => 100,
+            'jumlah_kk' => 200,
+            'laju_pertumbuhan' => 60,
+            'user_id' => 1
+        ]);
+        DB::table('jumlah_penduduks')->insert([
+            'tahun' => '2022',
+            'lk' => 40,
+            'pr' => 60,
+            'jumlah' => 100,
+            'jumlah_kk' => 200,
+            'laju_pertumbuhan' => 70,
             'user_id' => 1
         ]);
     }

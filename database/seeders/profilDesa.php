@@ -16,12 +16,14 @@ class profilDesa extends Seeder
     {
         DB::table('profil_desas')->insert([
             'foto_desa' => '',
-            'nama_desa' => 'Nama Desa',
+            'nama_desa' => 'Karehkel',
             'sejarah' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Eligendi, dolores nulla perspiciatis iure dicta nostrum accusantium quasi 
                         facilis modi fuga ducimus blanditiis adipisci at autem sequi, quod earum aut. Vero?',
-            'visi' => 'Ini visinya',
-            'misi' => 'ini misinya',
+            'visi' => 'Memajukan kesejahteraan masyarakat desa',
+            'misi' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Eligendi, dolores nulla perspiciatis iure dicta nostrum accusantium quasi 
+            facilis modi fuga ducimus blanditiis adipisci at autem sequi, quod earum aut. Vero?',
             'user_id' => 1
         ]);
     }
