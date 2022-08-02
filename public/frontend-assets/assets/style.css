@@ -70,6 +70,88 @@ marquee {
     color: #00264d;
 }
 
+.galeri-item {
+    transition: 0.5s;
+}
+
+.galeri-social {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.galeri-social a.btn {
+    position: relative;
+    margin: 0 3px;
+    margin-top: 100px;
+    opacity: 0;
+}
+
+.galeri-item:hover {
+    box-shadow: 0 0 30px #362222;
+}
+
+.galeri-item:hover .galeri-social {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.galeri-item:hover .galeri-social a.btn:first-child {
+    opacity: 1;
+    margin-top: 0;
+    transition: 0.3s 0s;
+}
+
+.galeri-item:hover .galeri-social a.btn:nth-child(2) {
+    opacity: 1;
+    margin-top: 0;
+    transition: 0.3s 0.05s;
+}
+
+.galeri-item:hover .galeri-social a.btn:nth-child(3) {
+    opacity: 1;
+    margin-top: 0;
+    transition: 0.3s 0.1s;
+}
+
+.galeri-item:hover .galeri-social a.btn:nth-child(4) {
+    opacity: 1;
+    margin-top: 0;
+    transition: 0.3s 0.15s;
+}
+
+.galeri-item .galeri-img img,
+.blog-item .blog-img img {
+    transition: 0.5s;
+}
+
+.galeri-item:hover .galeri-img img,
+.blog-item:hover .blog-img img {
+    transform: scale(1.15);
+}
+.galeri button {
+    background: #00264d;
+    border: 2px solid transparent;
+    border-radius: 0.75em;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    outline: none;
+    padding: 0.5em 1.5em;
+}
+
+.galeri button:hover {
+    background-color: #0272a3;
+    border: 2px solid transparent;
+    color: #fff000;
+}
+
 /* profil home */
 .profil-home {
     margin: 6em 0em;
@@ -186,7 +268,7 @@ marquee {
 .garis {
     margin-top: 8rem;
     background-color: #00264d;
-    height: 45vh;
+    height: 65vh;
     align-items: center;
     justify-content: center;
 }
@@ -203,7 +285,11 @@ marquee {
 }
 .garis h3 {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1rem;
+}
+.garis i {
+    color: #fff;
+    margin-bottom: 1rem;
 }
 
 .hero {
@@ -533,6 +619,9 @@ footer a:hover {
     }
     .garis p {
         font-size: 2rem;
+    }
+    .garis i {
+        margin-top: 1rem;
     }
 
     /* Site Footer */

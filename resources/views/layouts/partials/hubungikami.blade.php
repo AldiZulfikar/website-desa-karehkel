@@ -1,9 +1,10 @@
 <div class="contact" id="contact">
     <div class="container">
       <div class="row text-center mb-3">
-        <div class="col">
-          <h2>Hubungi Kami</h2>
-        </div>
+        <div class="col pb-3 mb-5 mx-auto">
+          <h5 class="fw-bold text-primary text-uppercase">Hubungi Kami</h5>
+          <h1 class="mb-0">Sampaikan Keluh <br> Kesah Anda</h1>
+      </div>
       </div>
       <div class="row justify-content-center">
         <div class="col-md-6">

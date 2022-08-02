@@ -2,8 +2,9 @@
 <div id="agenda" class="agenda">
     <div class="container">
         <div class="row text-center">
-            <div class="col">
-                <h2>AGENDA TERBARU</h2>
+            <div class="col pb-3 mb-5 mx-auto">
+              <h5 class="fw-bold text-primary text-uppercase">agenda desa</h5>
+              <h1 class="mb-0">Agenda Kegiatan</h1>
             </div>
         </div>
         <div class="schedule mb-5">
@@ -43,17 +44,17 @@
     <img src="{{asset('/frontend-assets/assets/img/logo-kabupaten.webp')}}" alt="Desa Karehkel" height="48" />
         <p>DATA PENDUDUK</p>
           <div class="row text-center mt-4">
-            <div class="col-lg-4 col-md-4 col-sm-12 ">
+            <div class="col-lg-4 col-md-4 col-sm-4 ">
               <i class="fas fa-male"></i>
               <h3>{{$jumlah->lk}}</h3>
               <h3>Laki-Laki</h3>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="col-lg-4 col-md-4 col-sm-4">
               <i class="fas fa-female"></i>
               <h3>{{$jumlah->pr}}</h3>
               <h3>Perempuan</h3>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="col-lg-4 col-md-4 col-sm-4">
               <i class="fas fa-users"></i>
               <h3>{{$jumlah->jumlah}}</h3>
               <h3>Total</h3>

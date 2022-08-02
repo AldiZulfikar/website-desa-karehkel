@@ -2,9 +2,10 @@
 <section id="berita" class="berita">
     <div class="container">
         <div class="row text-center">
-            <div class="col">
-                <h2>BERITA TERKINI</h2>
-            </div>
+            <div class="col pb-3 mb-5 mx-auto">
+                <h5 class="fw-bold text-primary text-uppercase">berita desa</h5>
+                <h1 class="mb-0">Berita Terkini</h1>
+              </div>
         </div>
         <div class="row justify-content-center">
             @foreach($berita as $data_berita)

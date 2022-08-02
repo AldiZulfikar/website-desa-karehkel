@@ -23,8 +23,14 @@
               >BERANDA</a
             >
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ route('profil-desa') }}">PROFIL</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              PROFIL DESA
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="{{ route('profil-desa') }}">Profil Desa</a></li>
+              <li><a class="dropdown-item" href="{{ route('data-desa') }}">Data Desa</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ route('agenda') }}"">AGENDA</a>
@@ -33,10 +39,17 @@
             <a class="nav-link" href="{{ route('berita') }}">BERITA</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('data-desa') }}">DATA DESA</a>
+            <a class="nav-link" href="#">GALERI</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ route('kontak-desa') }}">KONTAK KAMI</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              PELAYANAN DESA
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">BUMDes</a></li>
+              <li><a class="dropdown-item" href="#">PKK</a></li>
+              <li><a class="dropdown-item" href="{{ route('kontak-desa') }}">Kontak Kami</a></li>
+            </ul>
           </li>
           {{-- @guest
           @if (Route::has('login'))
