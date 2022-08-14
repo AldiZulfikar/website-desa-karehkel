@@ -39,15 +39,15 @@
             <a class="nav-link" href="{{ route('berita') }}">BERITA</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">GALERI</a>
+            <a class="nav-link" href="{{ route('galeri-desa') }}">GALERI</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               PELAYANAN DESA
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">BUMDes</a></li>
-              <li><a class="dropdown-item" href="#">PKK</a></li>
+              <li><a class="dropdown-item" href="{{ route('bumdes') }}">BUMDes</a></li>
+              <li><a class="dropdown-item" href="{{ route('pkk') }}">PKK</a></li>
               <li><a class="dropdown-item" href="{{ route('kontak-desa') }}">Kontak Kami</a></li>
             </ul>
           </li>

@@ -15,7 +15,6 @@
   <marquee behavior="alternet" direction="">
     Selamat Datang di Website Resmi Desa Karehkel | 
     Karehkel adalah sebuah desa di kecamatan Leuwiliang, Kabupaten Bogor, Jawa Barat, Indonesia
-
   </marquee>
     @include('layouts.partials.desa')
     @include('layouts.partials.agenda')

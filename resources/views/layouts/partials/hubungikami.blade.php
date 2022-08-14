@@ -1,3 +1,6 @@
+<?php
+  date_default_timezone_set('Asia/Jakarta');
+?>
 <div class="contact" id="contact">
     <div class="container">
       <div class="row text-center mb-3">
@@ -13,20 +16,20 @@
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>
           <form name="email-subs">
+            <input type="datetime" name="Timestamp" value="{{ date("Y-m-d | H:i:s")}}" hidden>
             <div class="mb-3">
               <label for="name" class="form-label">Nama</label>
-              <input type="text" class="form-control" id="name" aria-describedby="name" name="name">
+              <input type="text" class="form-control" id="name" aria-describedby="name" name="Nama">
             </div>
-          <form>
             <div class="mb-3">
               <label for="notel" class="form-label">Nomor Whatsapps</label>
-              <input type="notel" class="form-control" id="notel" aria-describedby="notel" name="notel">
+              <input type="number" class="form-control" id="notel" aria-describedby="notel" name="No_WA">
             </div>
             <div class="mb-3">
               <label for="message" class="form-label">Pesan</label>
-              <textarea class="form-control" id="message" rows="3" name="message"></textarea>
+              <textarea class="form-control" id="message" rows="3" name="Pesan"></textarea>
             </div>
-            <div class="send text-center">
+            <div class="send text-center mt-4 text-center">
               <button type="submit" class="btn-kirim">Kirim</button>
             </div>
             <div class="loading text-center">

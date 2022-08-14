@@ -11,7 +11,7 @@ crossorigin="anonymous"
 <script>
     // form message
     const scriptURL =
-      "https://script.google.com/macros/s/AKfycbyOn_sPVKnULraJ6rlpUU9aDJs5v1hTQi4xf_8GXS_ZX337rpYAqIId6Z9xxW3vJea3/exec";
+      "https://script.google.com/macros/s/AKfycbyllChJ4JhoibIFgQG461Wq9_umZIKo-zMwWtpSTy7EtJTrADGIvRonnm6yzSwgM0c/exec";
     const form = document.forms["email-subs"];
     const btnSend = document.querySelector(".btn-kirim");
     const btnLoading = document.querySelector(".btn-loading");

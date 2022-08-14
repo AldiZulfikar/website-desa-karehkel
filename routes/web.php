@@ -28,6 +28,12 @@ Route::get('/data-desa', [App\Http\Controllers\Frontend\dataDesaController::clas
 
 Route::get('/kontak-desa', [App\Http\Controllers\Frontend\kontakDesaController::class, 'index'])->name('kontak-desa');
 
+Route::get('/galeri-desa', [App\Http\Controllers\Frontend\galeriController::class, 'index'])->name('galeri-desa');
+
+Route::get('/bumdes', [App\Http\Controllers\Frontend\bumdesController::class, 'index'])->name('bumdes');
+
+Route::get('/pkk', [App\Http\Controllers\Frontend\pkkController::class, 'index'])->name('pkk');
+
 // Admin
 Route::group(['middleware' => 'auth'], function () {
     Route::get('desa', [App\Http\Controllers\Admin\AdminController::class, 'index'])->name('admin-dashboard');
@@ -92,4 +98,11 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('desa/berita/{id}', [App\Http\Controllers\Admin\BeritaController::class, 'edit'])->name('admin-berita-desa-edit');
     Route::put('desa/berita/{id}', [App\Http\Controllers\Admin\BeritaController::class, 'update'])->name('admin-update-berita-desa');
     Route::delete('desa/berita/{id}', [App\Http\Controllers\Admin\BeritaController::class, 'delete'])->name('admin-berita-desa-delete');
+
+    Route::get('desa/galeri', [App\Http\Controllers\Admin\GaleriController::class, 'index'])->name('admin-galeri-desa');
+    Route::get('desa/galeri/tambah', [App\Http\Controllers\Admin\GaleriController::class, 'add'])->name('admin-tambah-galeri-desa');
+    Route::post('desa/galeri', [App\Http\Controllers\Admin\GaleriController::class, 'create'])->name('admin-galeri-desa-tambah');
+    Route::get('desa/galeri/{id}', [App\Http\Controllers\Admin\GaleriController::class, 'edit'])->name('admin-galeri-desa-edit');
+    Route::put('desa/galeri/{id}', [App\Http\Controllers\Admin\GaleriController::class, 'update'])->name('admin-update-galeri-desa');
+    Route::delete('desa/galeri/{id}', [App\Http\Controllers\Admin\GaleriController::class, 'delete'])->name('admin-galeri-desa-delete');
 });

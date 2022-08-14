@@ -9,72 +9,30 @@
 					<h1 class="mb-0">Karya Desa Karehkel</h1>
 				</div>
 				<div class="row g-5">
+					@foreach ($galeri as $data)
 					<div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
 						<div class="galeri-item bg-light rounded overflow-hidden shadow-lg">
 							<div class="galeri-img position-relative overflow-hidden">
-								<img class="img-fluid w-100" src="{{asset('/frontend-assets/assets/img/agenda.jpg')}}" alt="" />
+								<img class="img-fluid w-100" src="{{$data->gambar_galeri ? asset('upload/' .$data->gambar_galeri) : asset('/frontend-assets/assets/img/desa.png')}}" alt=""  />
 								<div class="galeri-social">
 									<a
 										class="btn btn-lg btn-primary btn-lg-square rounded"
-										href=""
+										href="{{$data->ig}}"
 										><i class="fab fa-instagram fw-normal"></i
 									></a>
 									<a
 										class="btn btn-lg btn-primary btn-lg-square rounded"
-										href=""
+										href="{{$data->toko}}"
 										><i class="fas fa-dumpster"></i></a>
 								</div>
 							</div>
 							<div class="text-center py-4">
-								<h4 class="text-dark">judul galeri</h4>
-								<p class="text-dark text-uppercase m-0">Nama pemilik</p>
+								<h4 class="text-dark">{{$data->judul}}</h4>
+								<p class="text-dark text-uppercase m-0">{{$data->pemilik}}</p>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
-						<div class="galeri-item bg-light rounded overflow-hidden shadow-lg">
-							<div class="galeri-img position-relative overflow-hidden">
-								<img class="img-fluid w-100" src="{{asset('/frontend-assets/assets/img/agenda.jpg')}}" alt="" />
-								<div class="galeri-social">
-									<a
-										class="btn btn-lg btn-primary btn-lg-square rounded"
-										href=""
-										><i class="fab fa-instagram fw-normal"></i
-									></a>
-									<a
-										class="btn btn-lg btn-primary btn-lg-square rounded"
-										href=""
-										><i class="fas fa-dumpster"></i></a>
-								</div>
-							</div>
-							<div class="text-center py-4">
-								<h4 class="text-dark">judul galeri</h4>
-								<p class="text-dark text-uppercase m-0">Nama pemilik</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
-						<div class="galeri-item bg-light rounded overflow-hidden shadow-lg">
-							<div class="galeri-img position-relative overflow-hidden">
-								<img class="img-fluid w-100" src="{{asset('/frontend-assets/assets/img/agenda.jpg')}}" alt="" />
-								<div class="galeri-social">
-									<a
-										class="btn btn-lg btn-primary btn-lg-square rounded"
-										href=""
-										><i class="fab fa-instagram fw-normal"></i
-									></a>
-									<a
-										class="btn btn-lg btn-primary btn-lg-square rounded"
-										href=""
-										><i class="fas fa-dumpster"></i></a>
-								</div>
-							</div>
-							<div class="text-center py-4">
-								<h4 class="text-dark">judul galeri</h4>
-								<p class="text-dark text-uppercase m-0">Nama pemilik</p>
-							</div>
-						</div>
-					</div>
+					@endforeach
 				</div>
 			</div>
 			<div class="galeri text-center mt-4">

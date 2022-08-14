@@ -358,6 +358,23 @@ marquee {
     color: #fff000;
 }
 
+.contact button {
+    background: #00264d;
+    border: 2px solid transparent;
+    border-radius: 0.75em;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    outline: none;
+    padding: 0.5em 1.5em;
+}
+
+.contact button:hover {
+    background-color: #0272a3;
+    border: 2px solid transparent;
+    color: #fff000;
+}
 /* Site Footer */
 .site-footer {
     background-color: #00264d;
@@ -467,6 +484,100 @@ footer a:hover {
 .visi p,
 .misi p {
     text-align: justify;
+}
+
+/* pkk */
+.pkk {
+    margin: 5px 0em;
+    align-items: center;
+}
+
+.pkk h2 {
+    font-size: 2em;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 1.5rem;
+}
+
+.pkk img {
+    align-items: center;
+    width: 33em;
+}
+
+.pkk p {
+    text-align: justify;
+}
+
+/* bumdes Page */
+.bumdes {
+    margin: 4em 0em;
+    align-items: center;
+}
+
+.bumdes h2 {
+    font-size: 2em;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 4.5rem;
+}
+
+.bumdes img {
+    align-items: center;
+    width: 39em;
+}
+
+.bumdes p,
+.visi p,
+.misi p {
+    text-align: justify;
+}
+
+.ketua-bumdes {
+    margin: 3em 12em;
+}
+.ketua-bumdes h6 {
+    margin-top: 1rem;
+}
+
+.pengurus-bumdes img {
+    width: 12em;
+    border-radius: 10px;
+}
+
+.garis-bumdes {
+    margin: 8rem 0;
+    background-color: #00264d;
+    height: 85vh;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.garis-bumdes p {
+    padding-top: 1rem;
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+}
+.garis-bumdes h3 {
+    padding-top: 3rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+}
+.garis-bumdes h4 {
+    color: #000;
+}
+.garis-bumdes i {
+    color: #000;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+.cp i {
+    font-size: 1rem;
+}
+.cp span {
+    padding: 5px;
 }
 
 /* Data Desa */
@@ -624,6 +735,17 @@ footer a:hover {
         margin-top: 1rem;
     }
 
+    .garis-bumdes {
+        height: 100vh;
+    }
+    .pengurus {
+        margin-top: 0.5rem;
+    }
+
+    .ketua-bumdes {
+        margin-top: 0.5rem;
+    }
+
     /* Site Footer */
     .site-footer .desa {
         text-align: center;
@@ -662,5 +784,24 @@ footer a:hover {
     .struktur p,
     table {
         font-size: 1rem;
+    }
+
+    .bumdes img {
+        align-items: center;
+        width: 23em;
+        margin-bottom: 2rem;
+    }
+
+    .ketua-bumdes {
+        margin: 0;
+    }
+    .ketua-bumdes h6 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .pengurus-bumdes img {
+        margin-top: 0.5rem;
+        width: 12em;
     }
 }
