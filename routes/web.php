@@ -92,6 +92,20 @@ Route::group(['middleware' => 'auth'], function () {
     Route::put('desa/pemerintahan/{id}', [App\Http\Controllers\Admin\StrukturPemerintahanController::class, 'update'])->name('admin-update-pemerintahan-desa');
     Route::delete('desa/pemerintahan/{id}', [App\Http\Controllers\Admin\StrukturPemerintahanController::class, 'delete'])->name('admin-pemerintahan-desa-delete');
 
+    Route::get('desa/struktur-pkk', [App\Http\Controllers\Admin\StrukturPkkController::class, 'index'])->name('admin-struktur-pkk-desa');
+    Route::get('desa/struktur-pkk/tambah', [App\Http\Controllers\Admin\StrukturPkkController::class, 'add'])->name('admin-tambah-struktur-pkk-desa');
+    Route::post('desa/struktur-pkk', [App\Http\Controllers\Admin\StrukturPkkController::class, 'create'])->name('admin-struktur-pkk-desa-tambah');
+    Route::get('desa/struktur-pkk/{id}', [App\Http\Controllers\Admin\StrukturPkkController::class, 'edit'])->name('admin-struktur-pkk-desa-edit');
+    Route::put('desa/struktur-pkk/{id}', [App\Http\Controllers\Admin\StrukturPkkController::class, 'update'])->name('admin-update-struktur-pkk-desa');
+    Route::delete('desa/struktur-pkk/{id}', [App\Http\Controllers\Admin\StrukturPkkController::class, 'delete'])->name('admin-struktur-pkk-desa-delete');
+
+    Route::get('desa/bumdes', [App\Http\Controllers\Admin\BumdesController::class, 'index'])->name('admin-struktur-bumdes');
+    Route::get('desa/bumdes/tambah', [App\Http\Controllers\Admin\BumdesController::class, 'add'])->name('admin-tambah-struktur-bumdes');
+    Route::post('desa/bumdes', [App\Http\Controllers\Admin\BumdesController::class, 'create'])->name('admin-struktur-bumdes-tambah');
+    Route::get('desa/bumdes/{id}', [App\Http\Controllers\Admin\BumdesController::class, 'edit'])->name('admin-struktur-bumdes-edit');
+    Route::put('desa/bumdes/{id}', [App\Http\Controllers\Admin\BumdesController::class, 'update'])->name('admin-update-struktur-bumdes');
+    Route::delete('desa/bumdes/{id}', [App\Http\Controllers\Admin\BumdesController::class, 'delete'])->name('admin-struktur-bumdes-delete');
+
     Route::get('desa/berita', [App\Http\Controllers\Admin\BeritaController::class, 'index'])->name('admin-berita-desa');
     Route::get('desa/berita/tambah', [App\Http\Controllers\Admin\BeritaController::class, 'add'])->name('admin-tambah-berita-desa');
     Route::post('desa/berita', [App\Http\Controllers\Admin\BeritaController::class, 'create'])->name('admin-berita-desa-tambah');
@@ -99,10 +113,24 @@ Route::group(['middleware' => 'auth'], function () {
     Route::put('desa/berita/{id}', [App\Http\Controllers\Admin\BeritaController::class, 'update'])->name('admin-update-berita-desa');
     Route::delete('desa/berita/{id}', [App\Http\Controllers\Admin\BeritaController::class, 'delete'])->name('admin-berita-desa-delete');
 
+    Route::get('desa/pokja', [App\Http\Controllers\Admin\PokjaController::class, 'index'])->name('admin-pokja-desa');
+    Route::get('desa/pokja/tambah', [App\Http\Controllers\Admin\PokjaController::class, 'add'])->name('admin-tambah-pokja-desa');
+    Route::post('desa/pokja', [App\Http\Controllers\Admin\PokjaController::class, 'create'])->name('admin-pokja-desa-tambah');
+    Route::get('desa/pokja/{id}', [App\Http\Controllers\Admin\PokjaController::class, 'edit'])->name('admin-pokja-desa-edit');
+    Route::put('desa/pokja/{id}', [App\Http\Controllers\Admin\PokjaController::class, 'update'])->name('admin-update-pokja-desa');
+    Route::delete('desa/pokja/{id}', [App\Http\Controllers\Admin\PokjaController::class, 'delete'])->name('admin-pokja-desa-delete');
+
     Route::get('desa/galeri', [App\Http\Controllers\Admin\GaleriController::class, 'index'])->name('admin-galeri-desa');
     Route::get('desa/galeri/tambah', [App\Http\Controllers\Admin\GaleriController::class, 'add'])->name('admin-tambah-galeri-desa');
     Route::post('desa/galeri', [App\Http\Controllers\Admin\GaleriController::class, 'create'])->name('admin-galeri-desa-tambah');
     Route::get('desa/galeri/{id}', [App\Http\Controllers\Admin\GaleriController::class, 'edit'])->name('admin-galeri-desa-edit');
     Route::put('desa/galeri/{id}', [App\Http\Controllers\Admin\GaleriController::class, 'update'])->name('admin-update-galeri-desa');
     Route::delete('desa/galeri/{id}', [App\Http\Controllers\Admin\GaleriController::class, 'delete'])->name('admin-galeri-desa-delete');
+    
+    Route::get('desa/galeri-pkk', [App\Http\Controllers\Admin\GaleriPkkController::class, 'index'])->name('admin-galeri-pkk-desa');
+    Route::get('desa/galeri-pkk/tambah', [App\Http\Controllers\Admin\GaleriPkkController::class, 'add'])->name('admin-tambah-galeri-pkk-desa');
+    Route::post('desa/galeri-pkk', [App\Http\Controllers\Admin\GaleriPkkController::class, 'create'])->name('admin-galeri-pkk-desa-tambah');
+    Route::get('desa/galeri-pkk/{id}', [App\Http\Controllers\Admin\GaleriPkkController::class, 'edit'])->name('admin-galeri-pkk-desa-edit');
+    Route::put('desa/galeri-pkk/{id}', [App\Http\Controllers\Admin\GaleriPkkController::class, 'update'])->name('admin-update-galeri-pkk-desa');
+    Route::delete('desa/galeri-pkk/{id}', [App\Http\Controllers\Admin\GaleriPkkController::class, 'delete'])->name('admin-galeri-pkk-desa-delete');
 });

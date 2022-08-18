@@ -27,13 +27,13 @@
             <li>
               <a class="contact">
                 <span class="iconify" data-icon="carbon:phone-filled"></span>
-                <p class="text">(021) 12345678</p>
+                <p class="text">0895-4226-53276</p>
               </a>
             </li>
             <li>
               <a class="contact">
                 <span class="iconify" data-icon="ic:baseline-email"></span>
-                <p class="text">desakarehkel@email.com</p>
+                <p class="text">-</p>
               </a>
             </li>
           </div>

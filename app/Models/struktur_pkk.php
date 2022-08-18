@@ -5,9 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class bumdes extends Model
+class struktur_pkk extends Model
 {
-    protected $table = 'bumdes';
+    use HasFactory;
+
+    protected $table = 'struktur_pkks';
 
     protected $fillable = [
         'foto_pengurus',

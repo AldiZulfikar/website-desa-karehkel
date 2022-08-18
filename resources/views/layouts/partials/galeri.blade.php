@@ -13,7 +13,7 @@
 					<div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
 						<div class="galeri-item bg-light rounded overflow-hidden shadow-lg">
 							<div class="galeri-img position-relative overflow-hidden">
-								<img class="img-fluid w-100" src="{{$data->gambar_galeri ? asset('upload/' .$data->gambar_galeri) : asset('/frontend-assets/assets/img/desa.png')}}" alt=""  />
+								<img class="img-fluid w-100" src="{{$data->gambar_galeri ? asset('upload/' .$data->gambar_galeri) : asset('/frontend-assets/assets/img/desa.png')}}" alt="" style="width: 150px; height: 200px;" />
 								<div class="galeri-social">
 									<a
 										class="btn btn-lg btn-primary btn-lg-square rounded"
@@ -36,7 +36,7 @@
 				</div>
 			</div>
 			<div class="galeri text-center mt-4">
-				<a href="#">
+				<a href="/galeri-desa">
 				  <button type="button" class="btn">Selengkapnya</button>
 				</a>
 			</div>

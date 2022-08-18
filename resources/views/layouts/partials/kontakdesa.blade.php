@@ -40,7 +40,7 @@
                       data-icon="carbon:phone-filled"
                     ></span>
                   </td>
-                  <td><p>(021) 12345678</p></td>
+                  <td><p>0895-4226-53276</p></td>
                 </tr>
                 <tr>
                   <td class="icons-col text-center">
@@ -49,7 +49,7 @@
                       data-icon="ic:baseline-email"
                     ></span>
                   </td>
-                  <td><p>desakarehkel@email.com</p></td>
+                  <td><p>-</p></td>
                 </tr>
                 <tr>
                   <td class="icons-col text-center">
@@ -107,7 +107,7 @@
                         <input type="text" class="form-control" id="name" aria-describedby="name" name="Nama">
                       </div>
                       <div class="mb-3">
-                        <label for="notel" class="form-label">Nomor Whatsapps</label>
+                        <label for="notel" class="form-label">Nomor WhatsApp</label>
                         <input type="number" class="form-control" id="notel" aria-describedby="notel" name="No_WA">
                       </div>
                       <div class="mb-3">

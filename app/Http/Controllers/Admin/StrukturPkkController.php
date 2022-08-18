@@ -4,25 +4,25 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\bumdes;
+use App\Models\struktur_pkk;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use Illuminate\Support\Facades\Storage;
 
-class BumdesController extends Controller
+class StrukturPkkController extends Controller
 {
     public function index()
     {
-        $struktur = bumdes::all();
+        $struktur = struktur_pkk::all();
 
-        return view("admin.bumdes.index", [
+        return view("admin.strukturpkk.index", [
             'struktur' => $struktur
         ]);
     }
     
     public function add()
     {
-        return view("admin.bumdes.add");
+        return view("admin.strukturpkk.add");
     }
 
     public function create(Request $request)
@@ -35,17 +35,17 @@ class BumdesController extends Controller
 
         $data = $request->all();
         $data['user_id'] = Auth::id();
-        $data['foto_pengurus'] = $request->file('foto_pengurus')->store('bumdes');
+        $data['foto_pengurus'] = $request->file('foto_pengurus')->store('struktur_pkk');
 
-        bumdes::create($data);
+        struktur_pkk::create($data);
 
-        return redirect()->route('admin-struktur-bumdes')->with('message','success');
+        return redirect()->route('admin-struktur-pkk-desa')->with('message','success');
     }
 
     public function edit($id)
     {
-        $struktur = bumdes::find($id);
-        return view("admin.bumdes.edit", [
+        $struktur = struktur_pkk::find($id);
+        return view("admin.strukturpkk.edit", [
             'struktur' => $struktur
         ]);
     }
@@ -53,34 +53,34 @@ class BumdesController extends Controller
     public function update(Request $request, $id)
     {
         if(empty($request->file('foto_pengurus'))){
-            $struktur = bumdes::find($id);
+            $struktur = struktur_pkk::find($id);
             $struktur->update([
                 'nama' => $request->nama,
                 'jabatan' => $request->jabatan,
                 'user_id' => Auth::id(),
             ]);
-            return redirect()->route('admin-struktur-bumdes')->with('message','success');
+            return redirect()->route('admin-struktur-pkk-desa')->with('message','success');
         }else{
-            $struktur = bumdes::find($id);
+            $struktur = struktur_pkk::find($id);
             Storage::delete($struktur->foto_pengurus);
             $struktur->update([
-                'foto_pengurus' => $request->file('foto_pengurus')->store('bumdes'),
+                'foto_pengurus' => $request->file('foto_pengurus')->store('struktur_pkk'),
                 'nama' => $request->nama,
                 'jabatan' => $request->jabatan,
                 'user_id' => Auth::id(),
             ]);
-            return redirect()->route('admin-struktur-bumdes')->with('message','success');
+            return redirect()->route('admin-struktur-pkk-desa')->with('message','success');
         }
     }
 
     public function delete($id)
     {
-        $struktur = bumdes::find($id);
+        $struktur = struktur_pkk::find($id);
 
         Storage::delete($struktur->foto_pengurus);
 
         $struktur->delete($id);
 
-        return redirect()->route('admin-struktur-bumdes')->with('message','success');
+        return redirect()->route('admin-struktur-pkk-desa')->with('message','success');
     }
 }

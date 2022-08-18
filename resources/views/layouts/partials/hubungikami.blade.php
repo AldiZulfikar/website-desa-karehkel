@@ -22,7 +22,7 @@
               <input type="text" class="form-control" id="name" aria-describedby="name" name="Nama">
             </div>
             <div class="mb-3">
-              <label for="notel" class="form-label">Nomor Whatsapps</label>
+              <label for="notel" class="form-label">Nomor WhatsApp</label>
               <input type="number" class="form-control" id="notel" aria-describedby="notel" name="No_WA">
             </div>
             <div class="mb-3">

@@ -5,6 +5,7 @@
         <span class="tab-item active" data-target=".geografi">Sejarah</span>
         <span class="tab-item" data-target=".kependudukan">POKJA</span>
         <span class="tab-item" data-target=".pendidikan">Galeri PKK</span>
+        <span class="tab-item" data-target=".kesehatan">Struktur</span>
       </div>
     </div>
   </div>
@@ -54,8 +55,8 @@
             <thead>
               <tr>
                 <th>Kelompok</th>
-                <th>Misi</th>
                 <th>Program</th>
+                <th>Kegiatan</th>
               </tr>
             </thead>
             <tbody>
@@ -86,7 +87,7 @@
     <div class="container">
       <div class="row text-center">
         <div class="col-lg-12">
-          <h2>POKJA PKK Desa Karehkel</h2>
+          <h2>Galeri PKK Desa Karehkel</h2>
         </div>
       </div>
       <div class="row g-5">
@@ -115,6 +116,41 @@
         </div>
         {{-- @endforeach --}}
     </div>
+    </div>
+  </section>
+  <section class="pkk kesehatan tab-content">
+    < class="container">
+      <div class="row text-center">
+        <div class="col-lg-12">
+          <h2>Struktur PKK Desa Karehkel</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p class="text-center">
+            Berikut ini merupakan struktur pengurus PKK yang
+            terdapat pada Desa Karehkel, Kecamatan Leuwiliang, Kabupaten
+            Bogor.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        @foreach($struktur_pkk as $data)
+        <div class="col-lg-4 mb-5">
+          <div class="pengurus col-lg-10 wow slideInUp">
+            <div class="rounded-3 shadow-lg overflow-hidden">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid w-100" src="{{$data->foto_pengurus ? asset('upload/' . $data->foto_pengurus) : asset('/frontend-assets/assets/img/user-foto.jpg')}}" alt="" />
+              </div>
+              <div class="text-center py-4">
+                <h4 class="text-dark">{{$data->nama}}</h4>
+                <h6 class="text-uppercase m-0">{{$data->jabatan}}</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        @endforeach
+      </div>
     </div>
   </section>
   <!-- Profil End -->

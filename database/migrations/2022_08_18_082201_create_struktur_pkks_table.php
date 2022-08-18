@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateBumdesTable extends Migration
+class CreateStrukturPkksTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateBumdesTable extends Migration
      */
     public function up()
     {
-        Schema::create('bumdes', function (Blueprint $table) {
+        Schema::create('struktur_pkks', function (Blueprint $table) {
             $table->id();
             $table->string("foto_pengurus")->nullable();;
             $table->string("nama");
@@ -30,6 +30,6 @@ class CreateBumdesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('bumdes');
+        Schema::dropIfExists('struktur_pkks');
     }
 }
