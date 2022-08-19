@@ -126,7 +126,7 @@
       </div>
       <div class="row">
         @foreach($struktur as $data)
-        <div class="col-lg-4 mb-5">
+        <div class="col-lg-2 mb-5">
           <div class="pengurus col-lg-10 wow slideInUp">
             <div class="rounded-3 shadow-lg overflow-hidden">
               <div class="position-relative overflow-hidden">
