@@ -28,7 +28,7 @@ class DatabaseSeeder extends Seeder
             strukturPkk::class,
             strukturBumdes::class,
             galeri::class,
-            galeripkk::class,
+            galeriPkk::class,
             users::class
         ]);
     }
