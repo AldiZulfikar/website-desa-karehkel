@@ -122,6 +122,7 @@
                   <th scope="col">Nama Sekolah</th>
                   <th scope="col">Jumlah Guru</th>
                   <th scope="col">Jumlah Murid</th>
+                  <th scope="col">Lokasi</th>
                 </tr>
               </thead>
               <tbody class="data-table">
@@ -129,6 +130,7 @@
                 <tr>
                   <th>{{$data_pendidikan -> nama_sekolah}}</th>
                   <td>{{$data_pendidikan -> jumlah_guru}}</td>
+                  <td>{{$data_pendidikan -> jumlah_murid}}</td>
                   <td>{{$data_pendidikan -> lokasi}}</td>
                 </tr>
               @endforeach
@@ -156,6 +158,10 @@
                 <tr>
                   <th colspan="2" scope="col">Tenaga Kesehatan</th>
                   <th scope="col">Jumlah</th>
+                </tr>
+                <tr>
+                  <th>Jenis</th>
+                  <th colspan="2">Keterangan</th>
                 </tr>
               </thead>
               <tbody class="data-table">

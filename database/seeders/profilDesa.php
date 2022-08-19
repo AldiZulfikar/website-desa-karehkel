@@ -17,13 +17,10 @@ class profilDesa extends Seeder
         DB::table('profil_desas')->insert([
             'foto_desa' => '',
             'nama_desa' => 'Karehkel',
-            'sejarah' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Eligendi, dolores nulla perspiciatis iure dicta nostrum accusantium quasi 
-                        facilis modi fuga ducimus blanditiis adipisci at autem sequi, quod earum aut. Vero?',
+            'sejarah' => 'Desa Karehkel adalah salah satu Desa di wilayah Utara Kecamatan Leuwiliang, dengan luas wilayah
+            420 Ha. secara geografis berbatasan dengan Kecamatan Rumpin',
             'visi' => 'Memajukan kesejahteraan masyarakat desa',
-            'misi' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Eligendi, dolores nulla perspiciatis iure dicta nostrum accusantium quasi 
-            facilis modi fuga ducimus blanditiis adipisci at autem sequi, quod earum aut. Vero?',
+            'misi' => 'Membantu mewujudkan Aspirasi Masyarakat',
             'user_id' => 1
         ]);
     }

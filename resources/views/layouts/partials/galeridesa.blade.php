@@ -28,7 +28,6 @@
                     </div>
                     <div class="text-center py-4">
                         <h6 class="text-dark">{{$data->judul}}</h6>
-                        <span>Rp. 400.000</span>
                         <p class="text-dark text-uppercase m-0">{{$data->pemilik}}</p>
                     </div>
                 </div>

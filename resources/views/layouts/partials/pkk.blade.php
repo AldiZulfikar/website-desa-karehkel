@@ -60,23 +60,13 @@
               </tr>
             </thead>
             <tbody>
-            {{-- @foreach($letak_geografis as $letak_geografis) --}}
+            @foreach($pokja as $pokja)
               <tr>
-                <th>POKJA I</th>
-                <td>Menumbuhkan karakter keluarga yang bahagia, aman dan damai melalui penghayatan dan pengamalan Pancasila serta semangat gotong royong.</td>
-                <td>PIK Keluarga (Pusat Informasi dan Konsultasi Keluarga)</td>
+                <th>{{$pokja -> kelompok}}</th>
+                <td>{{$pokja -> program}}</td>
+                <td>{{$pokja -> kegiatan}}</td>
               </tr>
-              <tr>
-                <th>POKJA II</th>
-                <td>Menumbuhkan karakter keluarga yang bahagia, aman dan damai melalui penghayatan dan pengamalan Pancasila serta semangat gotong royong.</td>
-                <td>PIK Keluarga (Pusat Informasi dan Konsultasi Keluarga)</td>
-              </tr>
-              <tr>
-                <th>POKJA III</th>
-                <td>Menumbuhkan karakter keluarga yang bahagia, aman dan damai melalui penghayatan dan pengamalan Pancasila serta semangat gotong royong.</td>
-                <td>PIK Keluarga (Pusat Informasi dan Konsultasi Keluarga)</td>
-              </tr>
-            {{-- @endforeach --}}
+            @endforeach
             </tbody>
           </table>
         </div>
@@ -91,35 +81,35 @@
         </div>
       </div>
       <div class="row g-5">
-        {{-- @foreach ($galeri as $data) --}}
+        @foreach ($galeri as $data)
         <div class="col-lg-3 wow slideInUp" data-wow-delay="0.3s">
-            <div class="galeri-item bg-light rounded overflow-hidden shadow-lg">
-                <div class="galeri-img position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="{{asset('/frontend-assets/assets/img/desa.png')}}" alt="" style="width: 150px; height: 200px;"/>
-                    <div class="galeri-social">
-                        <a
-                            class="btn btn-lg btn-primary btn-lg-square rounded"
-                            href=""
-                            ><i class="fab fa-instagram fw-normal"></i
-                        ></a>
-                        <a
-                            class="btn btn-lg btn-primary btn-lg-square rounded"
-                            href=""
-                            ><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="text-center py-4">
-                    <h6. class="text-dark">Posyandu</h6.
-                    
-                </div>
-            </div>
-        </div>
-        {{-- @endforeach --}}
+          <div class="galeri-item bg-light rounded overflow-hidden shadow-lg">
+              <div class="galeri-img position-relative overflow-hidden">
+                  <img class="img-fluid w-100" src="{{$data->gambar_galeri ? asset('upload/' .$data->gambar_galeri) : asset('/frontend-assets/assets/img/desa.png')}}" alt="" style="width: 150px; height: 200px;"/>
+                  <div class="galeri-social">
+                      <a
+                          class="btn btn-lg btn-primary btn-lg-square rounded"
+                          href="{{$data->ig}}"
+                          ><i class="fab fa-instagram fw-normal"></i
+                      ></a>
+                      <a
+                          class="btn btn-lg btn-primary btn-lg-square rounded"
+                          href="{{$data->youtube}}"
+                          ><i class="fas fa-dumpster"></i></a>
+                  </div>
+              </div>
+              <div class="text-center py-4">
+                  <h6 class="text-dark">{{$data->judul}}</h6>
+                  <p class="text-dark text-center text-uppercase m-0">{{$data->pemilik}}</p>
+              </div>
+          </div>
+      </div>
+      @endforeach
     </div>
     </div>
   </section>
   <section class="pkk kesehatan tab-content">
-    < class="container">
+    <div class="container">
       <div class="row text-center">
         <div class="col-lg-12">
           <h2>Struktur PKK Desa Karehkel</h2>
@@ -135,7 +125,7 @@
         </div>
       </div>
       <div class="row">
-        @foreach($struktur_pkk as $data)
+        @foreach($struktur as $data)
         <div class="col-lg-4 mb-5">
           <div class="pengurus col-lg-10 wow slideInUp">
             <div class="rounded-3 shadow-lg overflow-hidden">
@@ -144,7 +134,7 @@
               </div>
               <div class="text-center py-4">
                 <h4 class="text-dark">{{$data->nama}}</h4>
-                <h6 class="text-uppercase m-0">{{$data->jabatan}}</h6>
+                <h6 class="text-uppercase text-center m-0">{{$data->jabatan}}</h6>
               </div>
             </div>
           </div>

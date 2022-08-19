@@ -19,9 +19,9 @@ class strukturPemerintahanDesa extends Seeder
             'nama' => 'ODI MARWAN S.S.M.Si',
             'jabatan'=> 'Kepala Desa',
             'tempat_lahir' => 'Bogor',
-            'tanggal_lahir' => '20-11-2000',
+            'tanggal_lahir' => '',
             'pendidikan' => 'S2',
-            'nip' => '123456',
+            'nip' => '-',
             'user_id' => 1
         ]);
         DB::table('struktur_pemerintahan_desas')->insert([
@@ -29,9 +29,9 @@ class strukturPemerintahanDesa extends Seeder
             'nama' => 'IWAN S.Pd',
             'jabatan'=> 'BPD',
             'tempat_lahir' => 'Bogor',
-            'tanggal_lahir' => '20-11-2000',
-            'pendidikan' => 'S1',
-            'nip' => '123456',
+            'tanggal_lahir' => '',
+            'pendidikan' => '-',
+            'nip' => '-',
             'user_id' => 1
         ]);
         DB::table('struktur_pemerintahan_desas')->insert([
@@ -39,9 +39,119 @@ class strukturPemerintahanDesa extends Seeder
             'nama' => 'M.WILDAN FAUZI RAHMAN',
             'jabatan'=> 'SEKDES',
             'tempat_lahir' => 'Bogor',
-            'tanggal_lahir' => '20-11-2000',
-            'pendidikan' => 'SMA',
-            'nip' => '123456',
+            'tanggal_lahir' => '',
+            'pendidikan' => '-',
+            'nip' => '-',
+            'user_id' => 1
+        ]);
+        DB::table('struktur_pemerintahan_desas')->insert([
+            'foto_pengurus' => '',
+            'nama' => 'NURFUJA ATIN KHOERIYAH',
+            'jabatan'=> 'KAUR KEUANGAN',
+            'tempat_lahir' => 'Bogor',
+            'tanggal_lahir' => '',
+            'pendidikan' => '-',
+            'nip' => '-',
+            'user_id' => 1
+        ]);
+        DB::table('struktur_pemerintahan_desas')->insert([
+            'foto_pengurus' => '',
+            'nama' => 'IWAN SETIAWAN',
+            'jabatan'=> 'KAUR TATA USAHA & UMUM',
+            'tempat_lahir' => 'Bogor',
+            'tanggal_lahir' => '',
+            'pendidikan' => '-',
+            'nip' => '-',
+            'user_id' => 1
+        ]);
+        DB::table('struktur_pemerintahan_desas')->insert([
+            'foto_pengurus' => '',
+            'nama' => 'ARIYANTO',
+            'jabatan'=> 'KAUR PERENCANAAN',
+            'tempat_lahir' => 'Bogor',
+            'tanggal_lahir' => '',
+            'pendidikan' => '-',
+            'nip' => '-',
+            'user_id' => 1
+        ]);
+        DB::table('struktur_pemerintahan_desas')->insert([
+            'foto_pengurus' => '',
+            'nama' => 'IWAN DARMAWAN',
+            'jabatan'=> 'KASIE PEMERINTAHAN',
+            'tempat_lahir' => 'Bogor',
+            'tanggal_lahir' => '',
+            'pendidikan' => '-',
+            'nip' => '-',
+            'user_id' => 1
+        ]);
+        DB::table('struktur_pemerintahan_desas')->insert([
+            'foto_pengurus' => '',
+            'nama' => 'ISKANDAR',
+            'jabatan'=> 'KAUR KESEJAHTERAAN',
+            'tempat_lahir' => 'Bogor',
+            'tanggal_lahir' => '',
+            'pendidikan' => '-',
+            'nip' => '-',
+            'user_id' => 1
+        ]);
+        DB::table('struktur_pemerintahan_desas')->insert([
+            'foto_pengurus' => '',
+            'nama' => 'TAQWA RIYADI',
+            'jabatan'=> 'KAUR PELAYANAN',
+            'tempat_lahir' => 'Bogor',
+            'tanggal_lahir' => '',
+            'pendidikan' => '-',
+            'nip' => '-',
+            'user_id' => 1
+        ]);
+        DB::table('struktur_pemerintahan_desas')->insert([
+            'foto_pengurus' => '',
+            'nama' => 'BAEDOWI',
+            'jabatan'=> 'KADUS I',
+            'tempat_lahir' => 'Bogor',
+            'tanggal_lahir' => '',
+            'pendidikan' => '-',
+            'nip' => '-',
+            'user_id' => 1
+        ]);
+        DB::table('struktur_pemerintahan_desas')->insert([
+            'foto_pengurus' => '',
+            'nama' => 'ANDI',
+            'jabatan'=> 'KADUS II',
+            'tempat_lahir' => 'Bogor',
+            'tanggal_lahir' => '',
+            'pendidikan' => '-',
+            'nip' => '-',
+            'user_id' => 1
+        ]);
+        DB::table('struktur_pemerintahan_desas')->insert([
+            'foto_pengurus' => '',
+            'nama' => 'ROBI IRAWAN',
+            'jabatan'=> 'KADUS III',
+            'tempat_lahir' => 'Bogor',
+            'tanggal_lahir' => '',
+            'pendidikan' => '-',
+            'nip' => '-',
+            'user_id' => 1
+        ]);
+        DB::table('struktur_pemerintahan_desas')->insert([
+            'foto_pengurus' => '',
+            'nama' => 'UJANG MARTIN',
+            'jabatan'=> 'KADUS IV',
+            'tempat_lahir' => 'Bogor',
+            'tanggal_lahir' => '',
+            'pendidikan' => '-',
+            'nip' => '-',
+            'user_id' => 1
+        ]);
+        DB::table('struktur_pemerintahan_desas')->insert([
+            'foto_pengurus' => '',
+            'nama' => 'A. SEPULOH',
+            'jabatan'=> 'KADUS V',
+            'tempat_lahir' => 'Bogor',
+            'tanggal_lahir' => '',
+            'pendidikan' => '-',
+            'nip' => '-',
             'user_id' => 1
         ]);
     }

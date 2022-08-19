@@ -16,29 +16,29 @@ class letakGeografis extends Seeder
     {
         DB::table('letak_geografis')->insert([
             'batas' => 'Sebelah Selatan',
-            'desa' => 'Cibungbulang',
-            'kecamatan' => 'Cibungbulang',
+            'desa' => 'Leuwiliang',
+            'kecamatan' => 'Leuwiliang',
             'kabupaten' => 'Bogor',
             'user_id' => 1
         ]);
         DB::table('letak_geografis')->insert([
             'batas' => 'Sebelah Barat',
-            'desa' => 'Cibungbulang',
-            'kecamatan' => 'Cibungbulang',
+            'desa' => 'Leuwibatu',
+            'kecamatan' => 'Rumpin',
             'kabupaten' => 'Bogor',
             'user_id' => 1
         ]);
         DB::table('letak_geografis')->insert([
             'batas' => 'Sebelah Timur',
-            'desa' => 'Cibungbulang',
+            'desa' => 'Galuga',
             'kecamatan' => 'Cibungbulang',
             'kabupaten' => 'Bogor',
             'user_id' => 1
         ]);
         DB::table('letak_geografis')->insert([
             'batas' => 'Sebelah Utara',
-            'desa' => 'Cibungbulang',
-            'kecamatan' => 'Cibungbulang',
+            'desa' => 'Mekarjaya',
+            'kecamatan' => 'Rumpin',
             'kabupaten' => 'Bogor',
             'user_id' => 1
         ]);

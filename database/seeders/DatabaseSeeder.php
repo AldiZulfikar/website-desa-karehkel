@@ -24,6 +24,11 @@ class DatabaseSeeder extends Seeder
             letakGeografis::class,
             peribadatan::class,
             tenagaKesehatan::class,
+            pokja::class,
+            strukturPkk::class,
+            strukturBumdes::class,
+            galeri::class,
+            galeripkk::class,
             users::class
         ]);
     }

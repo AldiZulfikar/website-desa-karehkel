@@ -63,49 +63,34 @@
     <div class="container">
       <div class="row text-center">
         <div class="col">
-          <h5>PROFIL KETUA BUMDES KAREHKEL</h5>
+          <h2>STRUKTUR PENGURUS</h2>
         </div>
       </div>
-      <div class="row ketua-bumdes">
-        <div class="col-md-10 col-lg-6 col-sm-10 d-flex flex-column align-items-center justify-content-center ">
-          <div class="pengurus-bumdes shadow-lg">
-          <img src="{{asset('/frontend-assets/assets/img/ketuabumdes.jpg')}}"  alt="kepala desa cijujung">
-          </div>
-          <h6>AHMAD</h6>
+      <div class="row">
+        <div class="col">
+          <p class="text-center">
+            Berikut ini merupakan struktur pengurus yang
+            terdapat pada Desa Karehkel, Kecamatan Leuwiliang, Kabupaten
+            Bogor.
+          </p>
         </div>
-        <div class="col-md-10 col-lg-6 col-sm-8 d-flex flex-column justify-content-center">
-        <table>
-          <tr>
-            <td>NAMA</td>
-            <td>:</td>
-            <td>AHMAD</td>
-          </tr>
-          <tr>
-            <td>TEMPAT, TANGGAL LAHIR</td>
-            <td>:</td>
-            <td>BOGOR</td>
-          </tr>
-          <tr>
-            <td>JENIS KELAMIN</td>
-            <td>:</td>
-            <td>LAKI-LAKI</td>
-          </tr>
-          <tr>
-            <td>PENDIDIKAN</td>
-            <td>:</td>
-            <td>SLTA</td>
-          </tr>
-          <tr>
-            <td>PEKERJAAN</td>
-            <td>:</td>
-            <td>WIRASWASTA</td>
-          </tr>
-          <tr>
-            <td>AGAMA</td>
-            <td>:</td>
-            <td>ISLAM</td>
-          </tr>
-        </table>
+      </div>
+      <div class="row">
+        @foreach($struktur as $data)
+        <div class="col-lg-4 mb-5">
+          <div class="pengurus col-lg-10 wow slideInUp">
+            <div class="rounded-3 shadow-lg overflow-hidden">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid w-100" src="{{$data->foto_pengurus ? asset('upload/' . $data->foto_pengurus) : asset('/frontend-assets/assets/img/user-foto.jpg')}}" alt="" />
+              </div>
+              <div class="text-center py-4">
+                <h4 class="text-dark">{{$data->nama}}</h4>
+                <h6 class="text-uppercase m-0">{{$data->jabatan}}</h6> 
+              </div>
+            </div>
+          </div>
+        </div>
+        @endforeach
       </div>
     </div>
   </section>

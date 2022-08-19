@@ -82,6 +82,38 @@
           </a>
         </li>
         <li class="nav-item">
+          <a class="nav-link text-white {{ (request()->routeIs('admin-struktur-bumdes')) ? 'active bg-gradient-primary' : '' }}" href="{{route('admin-struktur-bumdes')}}">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="fas fa-hand-holding-usd"></i>
+            </div>
+            <span class="nav-link-text ms-1">Data BUMDES</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white {{ (request()->routeIs('admin-pokja-desa')) ? 'active bg-gradient-primary' : '' }}" href="{{route('admin-pokja-desa')}}">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="fas fa-people-arrows"></i>
+            </div>
+            <span class="nav-link-text ms-1">Data POKJA PKK</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white {{ (request()->routeIs('admin-struktur-pkk-desa')) ? 'active bg-gradient-primary' : '' }}" href="{{route('admin-struktur-pkk-desa')}}">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="fas fa-users"></i>
+            </div>
+            <span class="nav-link-text ms-1">Struktur PKK</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white {{ (request()->routeIs('admin-galeri-pkk-desa')) ? 'active bg-gradient-primary' : '' }}" href="{{route('admin-galeri-pkk-desa')}}">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="fas fa-image"></i>
+            </div>
+            <span class="nav-link-text ms-1">Galeri PKK</span>
+          </a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link text-white {{ (request()->routeIs('admin-pemerintahan-desa')) ? 'active bg-gradient-primary' : '' }}" href="{{route('admin-pemerintahan-desa')}}">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="fas fa-sitemap"></i>
