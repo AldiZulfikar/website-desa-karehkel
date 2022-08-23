@@ -49,7 +49,7 @@
                       data-icon="ic:baseline-email"
                     ></span>
                   </td>
-                  <td><p>-</p></td>
+                  <td><p>desakarehkel1@gmail.com</p></td>
                 </tr>
                 <tr>
                   <td class="icons-col text-center">

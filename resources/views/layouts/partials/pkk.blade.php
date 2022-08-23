@@ -95,7 +95,7 @@
                       <a
                           class="btn btn-lg btn-primary btn-lg-square rounded"
                           href="{{$data->youtube}}"
-                          ><i class="fas fa-dumpster"></i></a>
+                          ><i class="fab fa-youtube"></i></a>
                   </div>
               </div>
               <div class="text-center py-4">

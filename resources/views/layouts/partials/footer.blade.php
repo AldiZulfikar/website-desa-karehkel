@@ -33,7 +33,7 @@
             <li>
               <a class="contact">
                 <span class="iconify" data-icon="ic:baseline-email"></span>
-                <p class="text">-</p>
+                <p class="text">desakarehkel1@gmail.com</p>
               </a>
             </li>
           </div>
